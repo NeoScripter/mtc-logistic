@@ -76,25 +76,25 @@
     <section class="services-section">
         <div class="serv__flex-group">
             <div class="serv__card">
-                <h3>Автоперевозка морских контейнеров по России и Белорусии</h3>
+                <h3><span class="red-text">Автоперевозка</span> морских контейнеров по России и Белорусии</h3>
                 <p>От 3 часов</p>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-1.png';?>" alt="Красная фура с контейнером" class="serv-img">
                 <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
             </div>
             <div class="serv__card">
-                <h3>ЖД доставка морских контейнеров по России и из Китая</h3>
+                <h3><span class="red-text">ЖД доставка</span> морских контейнеров по России и из Китая</h3>
                 <p>4–17 дней</p>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-2.png';?>" alt="Красная фура с контейнером" class="serv-img">
                 <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
             </div>
             <div class="serv__card">
-                <h3>Автовоз для доставки автомобилей по России и из Китая</h3>
+                <h3><span class="red-text">Автовоз</span> для доставки автомобилей по России и из Китая</h3>
                 <p>1–12 дней</p>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-3.png';?>" alt="Красная фура с контейнером" class="serv-img">
                 <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
             </div>
             <div class="serv__card">
-                <h3>⁠Перевозка негабаритных грузов</h3>
+                <h3>⁠Перевозка <span class="red-text">негабаритных</span> грузов</h3>
                 <p>1–12 дней</p>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-4.png';?>" alt="Красная фура с контейнером" class="serv-img">
                 <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
@@ -105,6 +105,31 @@
                 <p>До 25 дней</p>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-5.png';?>" alt="Красная фура с контейнером" class="serv-img">
                 <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
+            </div>
+        </div>
+    </section>
+    <section class="steps-section">
+        <h2>До получения груза всего 5 шагов</h2>
+        <div class="steps-wrapper">
+            <div class="step-flex-element">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/request.svg';?>" alt="Заявка">
+                Заявка
+            </div>
+            <div class="step-flex-element">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/calc.svg';?>" alt="Расчёт">
+                Расчёт
+            </div>
+            <div class="step-flex-element">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/contract.svg';?>" alt="Договор">
+                Договор
+            </div>
+            <div class="step-flex-element">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/delivery.svg';?>" alt="Доставка">
+                Доставка
+            </div>
+            <div class="step-flex-element">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/payment.svg';?>" alt="Оплата">
+                Оплата
             </div>
         </div>
     </section>

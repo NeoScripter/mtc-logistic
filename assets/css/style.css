@@ -269,6 +269,8 @@ button {
 
 .red-text {
     color: var(--red);
+    letter-spacing: inherit;
+    font-size: inherit;
 }
 
 .banner-img {
@@ -665,6 +667,81 @@ button {
     right: 30px;
 }
 
+/* Steps Section */
+
+.steps-section {
+    --_heading-fs: 40px;
+    --_margin-bottom: 50px;
+    --_svg-size: 40px;
+    --_flex-fs: 20px;
+    --_flex-height: 70px;
+    --_flex-width: 240px;
+}
+
+.steps-section h2 {
+    font-size: var(--_heading-fs);
+    margin-bottom: var(--_margin-bottom);
+    font-family: "Russo Regular";
+    font-weight: 400;
+}
+
+.steps-wrapper {
+    display: flex;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.step-flex-element {
+    height: var(--_flex-height);
+    flex-basis: 100%;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #fff;
+    font-size: var(--_flex-fs);
+    gap: 10px;
+    max-width: var(--_flex-width);
+    margin-bottom: 50px;
+}
+
+.step-flex-element::before {
+    content: '';
+    position: absolute;
+    clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0 100%, 0 0);
+    right: 0;
+    width: 700px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, #171717 40.73%, #A82E2E 100%);
+}
+
+.step-flex-element:nth-child(1) {
+    z-index: 5;
+}
+
+.step-flex-element:nth-child(2) {
+    z-index: 4;
+}
+.step-flex-element:nth-child(3) {
+    z-index: 3;
+}
+
+.step-flex-element:nth-child(4) {
+    z-index: 2;
+}
+.step-flex-element:nth-child(5) {
+    z-index: 1;
+}
+
+.step-flex-element img {
+    width: var(--_svg-size);
+    height: var(--_svg-size);
+}
+
+
 @media screen and (max-width: 1110px) {
     .header-main {
         --_img-width: 267px;
@@ -707,6 +784,9 @@ button {
     .serv-img {
         left: 280px;
         bottom: 5%;
+    }
+    .steps-section {
+        --_heading-fs: 32px;
     }
 }
 
@@ -831,6 +911,14 @@ button {
     .serv__find-more-btn {
         width: 100%;
     }
+    .step-flex-element {
+        flex: 1 1 33%;
+        max-width: 100%;
+    }
+    .steps-section {
+        --_heading-fs: 32px;
+        --_flex-fs: 18px;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -930,6 +1018,20 @@ button {
     .serv__card {
         width: 100%;
     }
+
+    .step-flex-element {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+    .steps-section {
+        --_heading-fs: 28px;
+        --_svg-size: 32px;
+        --_flex-height: 62px;
+    }
+    .step-flex-element {
+        padding-left: 10px;
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -956,5 +1058,15 @@ button {
         right: -40px;
         height: 150px;
         bottom: 20px;
+    }
+    .steps-section {
+        --_heading-fs: 26px;
+        --_margin-bottom: 40px;
+        --_svg-size: 28px;
+        --_flex-fs: 18px;
+        --_flex-height: 50px;
+    }
+    .step-flex-element {
+        margin-bottom: 30px;
     }
 }
