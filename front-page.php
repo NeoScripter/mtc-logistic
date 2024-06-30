@@ -73,6 +73,41 @@
             <div class="banner-img-wrapper"><img class="banner-img" src="<?php echo get_template_directory_uri() . '/assets/images/main-header.png';?>" alt="Большой красный грузовик с контейнером">
             </div>
     </section>
+    <section class="services-section">
+        <div class="serv__flex-group">
+            <div class="serv__card">
+                <h3>Автоперевозка морских контейнеров по России и Белорусии</h3>
+                <p>От 3 часов</p>
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-1.png';?>" alt="Красная фура с контейнером" class="serv-img">
+                <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
+            </div>
+            <div class="serv__card">
+                <h3>ЖД доставка морских контейнеров по России и из Китая</h3>
+                <p>4–17 дней</p>
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-2.png';?>" alt="Красная фура с контейнером" class="serv-img">
+                <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
+            </div>
+            <div class="serv__card">
+                <h3>Автовоз для доставки автомобилей по России и из Китая</h3>
+                <p>1–12 дней</p>
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-3.png';?>" alt="Красная фура с контейнером" class="serv-img">
+                <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
+            </div>
+            <div class="serv__card">
+                <h3>⁠Перевозка негабаритных грузов</h3>
+                <p>1–12 дней</p>
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-4.png';?>" alt="Красная фура с контейнером" class="serv-img">
+                <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
+            </div>
+            <div class="serv__card last-card">
+                <h3>Доставка из Китая «под ключ»</h3>
+                <p>От завода в Китае до вашего порога, быстро и без хлопот. Мы сделаем все, пока вы занимаетесь своим бизнесом</p>
+                <p>До 25 дней</p>
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-5.png';?>" alt="Красная фура с контейнером" class="serv-img">
+                <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>
