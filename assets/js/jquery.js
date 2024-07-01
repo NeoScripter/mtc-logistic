@@ -1,3 +1,52 @@
+function initCarouselControls(carouselContainer) {
+    const track = $(carouselContainer).find(".carousel-track");
+    let slides = $(carouselContainer).find(".carousel-slide");
+    const videoSlide = $(carouselContainer).find('.slide-video');
+    const nextButton = $(carouselContainer).find(".carousel-btn-right");
+    const prevButton = $(carouselContainer).find(".carousel-btn-left");
+    let currentIndex = 0;
+
+    const updateSlidePosition = () => {
+        const amountToMove = -slides.eq(currentIndex).position().left;
+        track.css("transform", `translateX(${amountToMove}px)`);
+    };
+
+    const replaceVideoSlide = () => {
+        if ($(window).width() < 600) {
+            videoSlide.prependTo(track);
+        } else if ($(window).width() < 900) {
+            videoSlide.insertAfter(slides.eq(0));
+        } else {
+            videoSlide.insertAfter(slides.eq(1));
+        }
+        slides = $(carouselContainer).find('.carousel-slide');
+        currentIndex = 0;
+        updateSlidePosition();
+    };
+    
+    replaceVideoSlide();
+    
+    $(window).resize(function() {
+        replaceVideoSlide();
+    });
+
+    nextButton.on("click", () => {
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+            updateSlidePosition();
+        }
+    });
+
+    prevButton.on("click", () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlidePosition();
+        }
+    });
+
+    updateSlidePosition();
+}
+
 jQuery(document).ready(function ($) {
     function initDropdownMenu() {
         let hideTimeout;
