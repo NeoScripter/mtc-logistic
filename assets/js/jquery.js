@@ -28,7 +28,7 @@ jQuery(document).ready(function ($) {
 
     initDropdownMenu();
 
-    function initCarouselControls() {
+    function initReviewsCarouselControls() {
         const track = $(".carousel-track");
         let slides = $(".carousel-slide");
         const videoSlide = $('.slide-video');
@@ -77,5 +77,38 @@ jQuery(document).ready(function ($) {
         updateSlidePosition();
     }
 
-    initCarouselControls();
+    initReviewsCarouselControls();
+
+
+    function initLettersCarouselControls() {
+        const track = $(".letters-carousel-track");
+        let slides = $(".letters-carousel-slide");
+        const btnWrapper = $(".letters-carousel-btn-wrapper");
+        const nextButton = $(btnWrapper).children(".carousel-btn-right");
+        const prevButton = $(btnWrapper).children(".carousel-btn-left");
+        let currentIndex = 0;
+
+        const updateSlidePosition = () => {
+            const amountToMove = -slides.eq(currentIndex).position().left;
+            track.css("transform", `translateX(${amountToMove}px)`);
+        };
+
+        nextButton.on("click", () => {
+            if (currentIndex < slides.length - 1) {
+                currentIndex++;
+                updateSlidePosition();
+            }
+        });
+
+        prevButton.on("click", () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlidePosition();
+            }
+        });
+
+        updateSlidePosition();
+    }
+
+    initLettersCarouselControls();
 });

@@ -135,6 +135,33 @@
     </section>
     <?php get_template_part('includes/section','reviews'); ?>
     <?php get_template_part('includes/section','about'); ?>
+    <section class="letters-section">
+    <h2><span class="red-text">Благодарственные</span> письма</h2>
+        <div class="letters-carousel">
+            <div class="letters-carousel-track-container">
+                <ul class="letters-carousel-track">
+                    <li class="letters-carousel-slide current-slide">
+                        <img src="<?php echo get_template_directory_uri() . '/assets/images/letter-1.png';?>" alt="Благодарственное письмо">
+                    </li>
+                    <li class="letters-carousel-slide">
+                        <img src="<?php echo get_template_directory_uri() . '/assets/images/letter-2.png';?>" alt="Благодарственное письмо">
+                    </li>
+                    <li class="letters-carousel-slide">
+                        <img src="<?php echo get_template_directory_uri() . '/assets/images/letter-3.png';?>" alt="Благодарственное письмо">
+                    </li>
+                    <li class="letters-carousel-slide">
+                        <img src="<?php echo get_template_directory_uri() . '/assets/images/letter-4.png';?>" alt="Благодарственное письмо">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="letters-carousel-controls-wrapper">
+            <div class="letters-carousel-btn-wrapper">
+                <button class="letters-carousel-btn carousel-btn-left"><?php include get_template_directory() . '/assets/images/svgs/carousel-arrow-left.svg';?></button>
+                <button class="letters-carousel-btn carousel-btn-right"><?php include get_template_directory() . '/assets/images/svgs/carousel-arrow-right.svg';?></button>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

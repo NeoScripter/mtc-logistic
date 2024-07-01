@@ -952,6 +952,72 @@ button {
     display: block;
 }
 
+/* Letter Section */
+
+.letters-section {
+    --_heading-fs: 40px;
+    --_margin-bottom: 50px;
+    --_carousel-margin-bottom: 30px;
+    --_gaps: 3;
+    --_slides: 4;
+
+    padding-block: 50px 130px;
+    padding-inline: 20px;
+}
+
+.letters-section > h2 {
+    font-size: var(--_heading-fs);
+    margin-bottom: var(--_margin-bottom);
+    font-family: "Russo Regular";
+    font-weight: 400;
+}
+
+.letters-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: var(--_carousel-margin-bottom);
+}
+
+.letters-carousel-track-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.letters-carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.letters-carousel-slide {
+    min-width: calc((100% - 20px * var(--_gaps)) / var(--_slides));
+}
+
+.letters-carousel-slide img {
+    width: 100%;
+}
+
+.letters-carousel-btn-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.letters-carousel-btn {
+    border: none;
+    cursor: pointer;
+    width: 47px;
+    height: 50px;
+}
+
+.letter {
+    background-color: #fff;
+    border-bottom: 1px solid var(--red);
+    height: 100%;
+}
+
 @media screen and (max-width: 1110px) {
 
 }
@@ -1027,6 +1093,10 @@ button {
         --_heading-fs: 32px;
         --_margin-bottom: 50px;
     }
+    .letters-section {
+        --_heading-fs: 32px;
+        --_margin-bottom: 50px;
+    }
     .about-us-section {
         --_heading-fs: 32px;
     }    
@@ -1041,6 +1111,12 @@ button {
         --_review-fs: 16px;
         --_gaps: 1;
         --_slides: 2;
+    }
+
+    .letters-section {
+        --_heading-fs: 32px;
+        --_gaps: 2;
+        --_slides: 3;
     }
 
     .about-us-section {
@@ -1188,6 +1264,9 @@ button {
     .reviews-section {
         --_heading-fs: 32px;
     }
+    .letters-section {
+        --_heading-fs: 32px;
+    }
     .steps-wrapper {
         margin-bottom: 0;
     } 
@@ -1210,6 +1289,12 @@ button {
         --_review-fs: 14px;
         --_gaps: 0;
         --_slides: 1;
+    }
+    .letters-section {
+        --_heading-fs: 28px;
+        --_margin-bottom: 50px;
+        --_gaps: 1;
+        --_slides: 2;
     }
     .about-us-section {
         --_heading-fs: 28px;
@@ -1330,6 +1415,9 @@ button {
     .reviews-section {
         --_heading-fs: 28px;
     }
+    .letters-section {
+        --_heading-fs: 28px;
+    }
     .carousel-link {
         padding-inline: 10px;
     }
@@ -1384,6 +1472,11 @@ button {
     }
     .reviews-section {
         --_heading-fs: 26px;
+    }
+    .letters-section {
+        --_heading-fs: 26px;
+        --_gaps: 0;
+        --_slides: 1;
     }
     .carousel-link {
         display: none;
