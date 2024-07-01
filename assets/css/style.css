@@ -857,6 +857,124 @@ button {
     height: 100%;
 }
 
+.slide-vide a {
+    display: block;
+}
+
+/* About Us Section */
+
+.about-us-section {
+    --_heading-fs: 40px;
+    --_flex-margin-block: 50px;
+    --_svg-size: 40px;
+    --_gap: 20px;
+    --_subheading-fs: 20px;
+    --_text-fs: 16px;
+    --_btn-fs: 18px;
+    --_svg-mb: 10px;
+    --_cols: 4;
+    --_gaps: 3;
+
+    min-height: 731px;
+    position: relative;
+    margin-bottom: 50px;
+    padding-inline: 20px;
+    padding-block: 170px 100px;
+    color: #fff;
+}
+
+.about-us-section:before {
+    content: "";
+    background-image: url(http://logistics.test/wp-content/uploads/2024/07/abous-us-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    width: 100vw;
+    border-image: linear-gradient(180deg, rgba(23, 23, 23, 0.50) -5.47%, rgba(23, 23, 23, 0.90) 16.04%, rgba(23, 23, 23, 0.95) 37.55%, #171717 59.06%, #171717 80.57%) 50%/50%; 
+    clip-path: polygon(61% 11%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.about-us-section h2 {
+    font-size: var(--_heading-fs);
+    font-family: "Russo Regular";
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.07em;
+}
+
+.about-us-flex-group {
+    margin-block: var(--_flex-margin-block);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--_gap);
+}
+
+.about__flex-item {
+    flex: 1 1 100%;
+    max-width: calc((100% - var(--_gap) * var(--_gaps)) / var(--_cols));
+}
+
+.about-us-svg {
+    width: var(--_svg-size);
+    height: var(--_svg-size);
+}
+
+.about__flex-item h3 {
+    font-size: var(--_subheading-fs);
+    font-weight: 600;
+    line-height: 115%;
+    font-family: 'CodePro Medium';
+    color: inherit;
+    margin-block: var(--_svg-mb);
+    letter-spacing: 0.002em;
+    word-spacing: -0.3em;
+}
+
+.about__flex-item p {
+    font-size: var(--_text-fs);
+    letter-spacing: 0.002em;
+    word-spacing: -0.3em;
+}
+
+.about-us-btn {
+    font-size: var(--_btn-fs);
+    padding: 0.8em;
+    width: min(100%, 229px);
+    text-align: center;
+    margin-inline: auto;
+    display: block;
+}
+
+@media screen and (max-width: 1110px) {
+
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 780px) {
+
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 540px) {
+    
+}
+
+@media screen and (max-width: 360px) {
+    
+}
 
 @media screen and (max-width: 1110px) {
     .header-main {
@@ -909,6 +1027,9 @@ button {
         --_heading-fs: 32px;
         --_margin-bottom: 50px;
     }
+    .about-us-section {
+        --_heading-fs: 32px;
+    }    
 }
 
 @media screen and (max-width: 900px) {
@@ -921,6 +1042,18 @@ button {
         --_gaps: 1;
         --_slides: 2;
     }
+
+    .about-us-section {
+        --_heading-fs: 32px;
+        --_svg-size: 40px;
+        --_gap: 20px;
+        --_subheading-fs: 20px;
+        --_text-fs: 16px;
+        --_btn-fs: 18px;
+        --_svg-mb: 10px;
+        --_cols: 4;
+        --_gaps: 3;
+    }   
 }
 
 @media screen and (max-width: 780px) {
@@ -1057,7 +1190,15 @@ button {
     }
     .steps-wrapper {
         margin-bottom: 0;
-    }
+    } 
+    .about-us-section {
+        --_svg-size: 32px;
+        --_gap: 20px;
+        --_subheading-fs: 18px;
+        --_btn-fs: 16px;
+        --_cols: 3;
+        --_gaps: 2;
+    }   
 }
 
 @media screen and (max-width: 600px) {
@@ -1070,6 +1211,9 @@ button {
         --_gaps: 0;
         --_slides: 1;
     }
+    .about-us-section {
+        --_heading-fs: 28px;
+    }    
 }
 
 @media screen and (max-width: 540px) {
@@ -1189,6 +1333,18 @@ button {
     .carousel-link {
         padding-inline: 10px;
     }
+    .about-us-section {
+        --_heading-fs: 28px;
+        --_gap: 10px;
+        --_subheading-fs: 18px;
+        --_text-fs: 14px;
+        --_btn-fs: 16px;
+        --_svg-mb: 10px;
+        --_cols: 2;
+        --_gaps: 1;
+
+        padding-bottom: 80px;
+    }    
 }
 
 @media screen and (max-width: 360px) {
@@ -1232,4 +1388,16 @@ button {
     .carousel-link {
         display: none;
     }
+    .about-us-section {
+        --_heading-fs: 26px;
+        --_svg-size: 28px;
+        --_flex-margin-block: 40px;
+        --_gap: 10px;
+        --_subheading-fs: 18px;
+        --_text-fs: 14px;
+        --_btn-fs: 16px;
+        --_svg-mb: 10px;
+        --_cols: 2;
+        --_gaps: 1;
+    }    
 }
