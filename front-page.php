@@ -140,18 +140,15 @@
         <div class="letters-carousel">
             <div class="letters-carousel-track-container">
                 <ul class="letters-carousel-track">
-                    <li class="letters-carousel-slide current-slide">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/images/letter-1.png';?>" alt="Благодарственное письмо">
-                    </li>
-                    <li class="letters-carousel-slide">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/images/letter-2.png';?>" alt="Благодарственное письмо">
-                    </li>
-                    <li class="letters-carousel-slide">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/images/letter-3.png';?>" alt="Благодарственное письмо">
-                    </li>
-                    <li class="letters-carousel-slide">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/images/letter-4.png';?>" alt="Благодарственное письмо">
-                    </li>
+                    <?php for ($i = 1; $i <= 7; $i++):?>
+                        <?php if ($i === 1):?>
+                        <li class="letters-carousel-slide current-slide">
+                        <?php else:?>
+                         <li class="letters-carousel-slide">
+                        <?php endif;?>
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/letter-' . $i . '.jpg';?>" alt="Благодарственное письмо">
+                        </li>
+                    <?php endfor;?>
                 </ul>
             </div>
         </div>
@@ -161,6 +158,16 @@
                 <button class="letters-carousel-btn carousel-btn-right"><?php include get_template_directory() . '/assets/images/svgs/carousel-arrow-right.svg';?></button>
             </div>
         </div>
+    </section>
+    <section class="webform-section">
+        <h2>Оставьте заявку на бесплатную консультацию</h2>
+        <p class="form-subheading">мы свяжемся с вами в ближайшее время</p>
+        <form class="contact-webform" action="">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+            <button class="submit-btn animated-btn-1">Заказать консультацию</button>
+        </form>
+        <p class="policy-consent">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных</p>
     </section>
 </main>
 

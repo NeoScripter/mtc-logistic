@@ -1018,16 +1018,126 @@ button {
     height: 100%;
 }
 
-@media screen and (max-width: 1110px) {
+/* Webform Section */
 
+.webform-section {
+    --_heading-fs: 40px;
+    --_subheading-fs: 24px;
+    --_form-fs: 16px;
+    --_fine-print-fs: 14px;
+    --_btn-fs: 16px;
+    --_flex-gap: 20px;
+    --_btn-width: 308px;
+
+    position: relative;
+    padding-block: 100px;
+    color: #fff;
+    padding-inline: 20px;
+}
+
+.webform-section:before {
+    content: "";
+    background-image: url(http://logistics.test/wp-content/uploads/2024/07/abous-us-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    width: 100vw;
+    border-image: linear-gradient(180deg, rgba(23, 23, 23, 0.50) -5.47%, rgba(23, 23, 23, 0.90) 16.04%, rgba(23, 23, 23, 0.95) 37.55%, #171717 59.06%, #171717 80.57%) 50%/50%; 
+}
+
+.webform-section > h2 {
+    color: inherit;
+    font-family: "Russo Regular";
+    font-size: var(--_heading-fs);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+    word-wrap: balance;
+}
+
+.form-subheading {
+    font-size: var(--_subheading-fs);
+    text-align: center;
+    word-wrap: balance;
+}
+
+.policy-consent {
+    font-size: var(--_fine-print-fs);
+    text-align: center;
+}
+
+.contact-webform {
+    display: flex;
+    gap: var(--_flex-gap);
+    align-items: flex-start;
+    padding-block: 10px;
+}
+
+.contact-webform input {
+    flex: 1 1 100%;
+    font-size: var(--_form-fs);
+    padding: 1em 0.8em;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.contact-webform input::placeholder {
+    color: #B2B2B2;
+}
+
+.submit-btn {
+    padding: 1em 0.8em;
+    cursor: pointer;
+    width: var(--_btn-width);
+    flex-shrink: 0;
+    font-size: var(--_btn-fs);
+}
+
+@media screen and (max-width: 1110px) {
+    .webform-section {
+        --_heading-fs: 32px;
+        --_fine-print-fs: 14px;
+        --_btn-fs: 16px;
+        --_flex-gap: 20px;
+        --_btn-width: 308px;
+    }
 }
 
 @media screen and (max-width: 900px) {
-
+    .webform-section {
+        --_heading-fs: 32px;
+        --_subheading-fs: 24px;
+        --_form-fs: 16px;
+        --_fine-print-fs: 12px;
+        --_btn-fs: 16px;
+        --_flex-gap: 20px;
+        --_btn-width: 228px;
+    }
 }
 
 @media screen and (max-width: 780px) {
-
+    .webform-section {
+        --_heading-fs: 28px;
+        --_subheading-fs: 20px;
+        --_form-fs: 16px;
+        --_fine-print-fs: 12px;
+        --_btn-fs: 16px;
+        --_flex-gap: 20px;
+        --_btn-width: 100%;
+    }
+    .contact-webform {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: stretch;
+        padding-block: 10px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1035,11 +1145,23 @@ button {
 }
 
 @media screen and (max-width: 540px) {
-    
+    .webform-section {
+        --_heading-fs: 22px;
+        --_subheading-fs: 16px;
+        --_form-fs: 14px;
+        --_fine-print-fs: 12px;
+        --_btn-fs: 16px;
+    }
 }
 
 @media screen and (max-width: 360px) {
-    
+    .webform-section {
+        --_heading-fs: 20px;
+        --_subheading-fs: 14px;
+        --_form-fs: 14px;
+        --_fine-print-fs: 12px;
+        --_btn-fs: 16px;
+    }
 }
 
 @media screen and (max-width: 1110px) {
