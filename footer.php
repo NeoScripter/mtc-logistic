@@ -32,7 +32,7 @@
             <h3>Контакты</h3>
             <div class="footer__flex-contacts">
                 <div class="footer__links-wrapper">
-                    <p>+7 499 113-55-59</p>
+                    <p class="footer__tel">+7 499 113-55-59</p>
                     <p>info@mtc-logistic.com</p>
                     <div class="footer__social-links">
                         <a href="" class="footer__social-link">
@@ -46,7 +46,7 @@
                         </a>
                     </div>
                 </div>
-                <button class="footer__calc-btn">Рассчитать стоимость</button>
+                <button class="footer__calc-btn animated-btn-3">Рассчитать стоимость</button>
             </div>
         </div>
     </div>

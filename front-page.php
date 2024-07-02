@@ -169,6 +169,44 @@
         </form>
         <p class="policy-consent">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных</p>
     </section>
+
+    <style>
+        .accordion__img-wrapper::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 20;
+        width: var(--_img-width);
+        height: 100%;
+        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/accordion-desktop.png';?>);
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+}
+    </style>
+    <section class="accordion-section">
+        <div class="accordion__img-wrapper"></div>
+        <div class="accordion">
+            <h2>Часто задаваемые <span class="red-text">вопросы</span></h2>
+            <?php for ($i = 1; $i <= 10; $i++) {
+                $question = get_field('question_' . $i);
+                $answer = get_field('answer_' . $i);
+                if ($question && $answer) : ?>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3><?php echo esc_html($question); ?></h3>
+                            <img class="accordion-svg" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/accordion-plus.svg';?>" alt="Плюсик">
+                        </div>
+                        <div class="accordion-content">
+                            <?php echo $answer;?>
+                        </div>
+                    </div>
+                <?php endif; 
+                } ?>
+        </div>
+        <img class="accordion-bg-img__mobile" src="<?php echo get_template_directory_uri() . '/assets/images/accordion-mobile.png';?>" alt="Большой красный грузовик с контейнером">
+    </section>
 </main>
 
 <?php get_footer(); ?>

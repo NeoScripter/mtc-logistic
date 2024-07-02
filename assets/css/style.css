@@ -12,9 +12,6 @@ html {
 }
 
 body {
-    /*     background-image: url(http://logistics.test/wp-content/uploads/2024/06/bg-pattern.png);
-    background-position: top;
-    background-size: cover; */
     background: url(http://logistics.test/wp-content/uploads/2024/06/bg-pattern.png) rgb(235, 233, 233) 50% / cover
         no-repeat;
 }
@@ -579,6 +576,10 @@ button {
     min-width: var(--_logo-width);
 }
 
+.footer__tel {
+    margin-bottom: 0.5em;
+}
+
 /* Services Section */
 
 .services-section {
@@ -1100,6 +1101,85 @@ button {
     font-size: var(--_btn-fs);
 }
 
+/* Accordion Section */
+
+.accordion-section {
+    --_heading-fs: 40px;
+    --_margin-block: 150px 150px;
+    --_heading-margin-bottom: 30px;
+    --_question-fs: 20px;
+    --_answer-fs: 18px;
+    --_svg-size: 16px;
+    --_grid-gap: 3vw;
+    --_item-padding-block: 20px;
+    --_img-width: 918px;
+    --_img-height: 520px;
+
+
+    padding-inline: 20px;
+    margin-block: var(--_margin-block);
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--_grid-gap);
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+}
+
+.accordion__img-wrapper {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: var(--_img-height);
+    overflow: visible;
+}
+
+.accordion-bg-img__mobile {
+    display: none;
+    width: var(--_img-width);
+    height: var(--_img-height);
+    object-fit: cover;
+    object-position: center;
+}
+
+.accordion > h2 {
+    font-family: "Russo Regular";
+    font-size: var(--_heading-fs);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: var(--_heading-margin-bottom);
+    word-wrap: balance;
+    letter-spacing: 0.002em;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #B2B2B2;
+    gap: 0.5em;
+}
+
+.accordion-header h3 {
+    font-size: var(--_question-fs);
+    font-weight: 600; 
+    font-family: "CodePro Medium";
+    padding-block: var(--_item-padding-block);
+}
+
+.accordion-content {
+    padding-top: var(--_item-padding-block);
+    font-size: var(--_answer-fs);
+    font-weight: 400; 
+}
+
+.accordion-svg {
+    width: var(--_svg-size);
+    height: var(--_svg-size);
+}
+
+
 @media screen and (max-width: 1110px) {
     .webform-section {
         --_heading-fs: 32px;
@@ -1107,6 +1187,13 @@ button {
         --_btn-fs: 16px;
         --_flex-gap: 20px;
         --_btn-width: 308px;
+    }
+    .accordion-section {
+        --_heading-fs: 32px;
+        --_svg-size: 16px;
+        --_grid-gap: 20px;
+        --_item-padding-block: 20px;
+        --_img-height: 578px;
     }
 }
 
@@ -1119,6 +1206,25 @@ button {
         --_btn-fs: 16px;
         --_flex-gap: 20px;
         --_btn-width: 228px;
+    }
+    .accordion-section {
+        --_heading-fs: 32px;
+        --_margin-block: 150px 0;
+        --_question-fs: 18px;
+        --_answer-fs: 16px;
+        --_grid-gap: 100px;
+        --_item-padding-block: 20px;
+        --_img-width: 100%;
+        --_img-height: 200px;
+
+        grid-template-columns: 1fr;
+    }
+
+    .accordion__img-wrapper {
+        display: none;
+    }
+    .accordion-bg-img__mobile {
+        display: block;
     }
 }
 
@@ -1152,6 +1258,11 @@ button {
         --_fine-print-fs: 12px;
         --_btn-fs: 16px;
     }
+    .accordion-section {
+        --_heading-fs: 22px;
+        --_margin-block: 100px 0px;
+        --_heading-margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1161,6 +1272,10 @@ button {
         --_form-fs: 14px;
         --_fine-print-fs: 12px;
         --_btn-fs: 16px;
+    }
+    .accordion-section {
+        --_heading-fs: 20px;
+        --_margin-block: 70px 0px;
     }
 }
 
@@ -1310,6 +1425,7 @@ button {
     }
     .nav-footer__ul {
         flex-direction: row;
+        flex-wrap: wrap;
     }
     .footer__flex-top-col-1 {
         padding-bottom: var(--_flex-padding);
