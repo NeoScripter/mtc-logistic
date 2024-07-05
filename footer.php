@@ -56,7 +56,17 @@
         <p class="footer__privacy-policy">Политика конфиденциальности</p>
     </div>
 </footer>
-
+<style>
+    body {
+        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/bg-pattern.png';?>);
+    }
+    .about-us-section:before {
+        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/abous-us-bg.png';?>);
+    }
+    .webform-section:before {
+        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/abous-us-bg.png';?>);
+    }
+</style>
 <?php wp_footer();?>
 </body>
 </html>

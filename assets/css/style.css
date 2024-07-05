@@ -6,14 +6,16 @@
 html {
     overflow-x: hidden;
     overflow-x: clip;
-    font-family: "CodePro Regular";
-    letter-spacing: -0.08em;
-    word-spacing: -0.08em;
+    font-family: "Source Regular";
 }
 
 body {
-    background: url(http://logistics.test/wp-content/uploads/2024/06/bg-pattern.png) rgb(235, 233, 233) 50% / cover
-        no-repeat;
+    overflow-x: hidden;
+    overflow-x: clip;
+    background-repeat: no-repeat;
+    background-size: cover;
+   /*  border-image: linear-gradient(rgba(245, 245, 245, 0.5), rgba(245, 245, 245, 0.5)) 50%/50%;  */
+   /*  border-image: fill 0 linear-gradient(hsl(0, 0%, 96%, 0.5), hsl(0, 0%, 96%, 0.5)); */
 }
 
 button {
@@ -146,6 +148,7 @@ button {
 .nav-main__ul a:is(:hover, :focus-visible) {
     text-decoration: underline 0.08em;
     text-underline-offset: 0.3em;
+    text-decoration-color: var(--red);
 }
 
 .nav-main__ul a:is(:active) {
@@ -154,7 +157,7 @@ button {
 
 .header-main__btn-group .header-btn {
     font-size: var(--_top-line-fs);
-    padding: 0.3em 0.5em;
+    padding: 0.5em 1em;
     cursor: pointer;
     width: max-content;
 }
@@ -284,7 +287,7 @@ button {
     flex-wrap: wrap;
     gap: 20px;
     font-size: var(--_fx-gr-fs);
-    font-family: "CodePro Medium";
+    font-family: "Source Regular";
     width: 100%;
 }
 
@@ -336,6 +339,15 @@ button {
     color: #505050;
     font-size: var(--_font-input-fs);
     max-width: 26%;
+    background-color: transparent;
+    border-radius: 1px;
+    border: 1px solid var(--light_grey, #B2B2B2); 
+}
+
+.input-wrapper input:is(:hover, :focus, :active) {
+    --light_grey: #000;
+    color: #000;
+    outline: none;
 }
 
 .social-icons-flex-group {
@@ -481,7 +493,7 @@ button {
 
 .footer-top-flex h3 {
     color: #fff;
-    font-family: "CodePro Medium";
+    font-family: "Source Regular";
     font-size: var(--_heading-fs);
     font-weight: 600;
 }
@@ -498,7 +510,14 @@ button {
 .footer-bottom p {
     display: block;
     font-size: var(--_fine-print-fs);
+    transition: color 0.3s ease;
+    user-select: none;
 }
+
+.footer-bottom p:is(:hover, :focus, :active) {
+    color: #505050;
+}
+
 
 .footer__flex-top-col-1 h3 {
     margin-bottom: var(--_h3-margin-bottom);
@@ -527,8 +546,15 @@ button {
     gap: 20px;
 }
 
-.nav-footer__ul li {
+.nav-footer__ul li a, 
+.nav-services__ul li a {
     font-size: var(--_text-fs);
+    transition: color 0.3s ease;
+}
+
+.nav-footer__ul li a:is(:hover, :focus, :active), 
+.nav-services__ul li a:is(:hover, :focus, :active) {
+    color: #B2B2B2;
 }
 
 .nav-services__ul {
@@ -565,6 +591,10 @@ button {
     cursor: pointer;
     border-radius: 1px;
     border: 1px solid var(--white, #fff);
+}
+
+.footer__calc-btn:is(:hover, :focus, :active) {
+    border-color: var(--red);
 }
 
 .footer__flex-contacts {
@@ -613,6 +643,7 @@ button {
     width: calc((100% - var(--_flex-gap) * var(--_flex-gaps)) / var(--_flex-cols));
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.40); 
 }
 
 .serv__card.last-card {
@@ -622,11 +653,10 @@ button {
 
 .serv__card h3 {
     font-size: var(--_heading-fs);
-    font-family: "CodePro Regular";
+    font-family: "Source Regular";
     font-weight: 600;
     line-height: 110%;
     margin-bottom: 10px;
-    letter-spacing: -0.06em;
 }
 
 .serv__card p {
@@ -654,18 +684,18 @@ button {
 .serv-img {
     position: absolute;
     left: 140px;
-    bottom: 25%;
+    bottom: 20%;
     object-fit: cover;
-    height: 140px;
+    height: 130px;
     object-position: left center;
 }
 
 .serv__card.last-card .serv-img {
-    height: 150%;
+    height: 160%;
     z-index: 12;
     left: auto;
-    bottom: -30%;
-    right: 30px;
+    bottom: -50%;
+    right: 10px;
 }
 
 /* Steps Section */
@@ -750,8 +780,8 @@ button {
     --_carousel-margin-bottom: 30px;
     --_btn-fs: 18px;
     --_review-fs: 16px;
-    --_gaps: 2;
-    --_slides: 3;
+    --_gaps: 1;
+    --_slides: 2;
 
     padding-block: 50px 130px;
     padding-inline: 20px;
@@ -771,6 +801,10 @@ button {
     width: 100%;
     overflow: hidden;
     margin-bottom: var(--_carousel-margin-bottom);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.40), inset 0px 1px 20px 0px rgba(137, 141, 159, 0.05); 
 }
 
 .carousel-track-container {
@@ -782,10 +816,12 @@ button {
     display: flex;
     gap: 20px;
     transition: transform 0.5s ease;
+    height: 100%;
 }
 
 .carousel-slide {
     min-width: calc((100% - 20px * var(--_gaps)) / var(--_slides));
+    height: 100%;
 }
 
 .carousel-slide img {
@@ -804,6 +840,37 @@ button {
     cursor: pointer;
     width: 47px;
     height: 50px;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn svg, 
+.carousel-btn rect,
+.carousel-btn path {
+    transition: inherit;
+}
+
+.carousel-btn svg {
+    border: 1px solid var(--red);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.carousel-btn rect {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-btn:is(:hover, :focus, :active) svg {
+    border: 1px solid var(--red);
+}
+
+.carousel-btn:is(:hover, :focus, :active) svg rect {
+    fill: transparent;
+}
+
+.carousel-btn:is(:hover, :focus, :active) svg path {
+    stroke: var(--red);
 }
 
 .carousel-link {
@@ -820,6 +887,7 @@ button {
     background-color: #fff;
     border-bottom: 1px solid var(--red);
     height: 100%;
+    
 }
 
 .review-top {
@@ -856,10 +924,16 @@ button {
     object-fit: cover;
     object-position: center;
     height: 100%;
+    width: 100%;
 }
 
-.slide-vide a {
+.slide-video {
+    border-image: conic-gradient(rgba(137, 141, 159, 0.20) 0 0) fill 0/0/0 100vw;
+}
+
+.slide-video a {
     display: block;
+    height: 100%;
 }
 
 /* About Us Section */
@@ -886,7 +960,6 @@ button {
 
 .about-us-section:before {
     content: "";
-    background-image: url(http://logistics.test/wp-content/uploads/2024/07/abous-us-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -907,7 +980,6 @@ button {
     font-weight: 400;
     color: #fff;
     text-align: center;
-    letter-spacing: 0.07em;
 }
 
 .about-us-flex-group {
@@ -931,17 +1003,13 @@ button {
     font-size: var(--_subheading-fs);
     font-weight: 600;
     line-height: 115%;
-    font-family: 'CodePro Medium';
+    font-family: 'Source Regular';
     color: inherit;
     margin-block: var(--_svg-mb);
-    letter-spacing: 0.002em;
-    word-spacing: -0.3em;
 }
 
 .about__flex-item p {
     font-size: var(--_text-fs);
-    letter-spacing: 0.002em;
-    word-spacing: -0.3em;
 }
 
 .about-us-btn {
@@ -951,6 +1019,10 @@ button {
     text-align: center;
     margin-inline: auto;
     display: block;
+}
+
+.about-us-btn:is(:hover, :focus-visible, :active) {
+    border: 1px solid #fff;
 }
 
 /* Letter Section */
@@ -997,6 +1069,7 @@ button {
 
 .letters-carousel-slide img {
     width: 100%;
+    cursor: pointer;
 }
 
 .letters-carousel-btn-wrapper {
@@ -1011,12 +1084,43 @@ button {
     cursor: pointer;
     width: 47px;
     height: 50px;
+    transition: all 0.3s ease;
 }
 
 .letter {
     background-color: #fff;
     border-bottom: 1px solid var(--red);
     height: 100%;
+}
+
+.letters-carousel-btn svg, 
+.letters-carousel-btn rect,
+.letters-carousel-btn path {
+    transition: inherit;
+}
+
+.letters-carousel-btn svg {
+    border: 1px solid var(--red);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.letters-carousel-btn rect {
+    height: 100%;
+    width: 100%;
+}
+
+.letters-carousel-btn:is(:hover, :focus, :active) svg {
+    border: 1px solid var(--red);
+}
+
+.letters-carousel-btn:is(:hover, :focus, :active) svg rect {
+    fill: transparent;
+}
+
+.letters-carousel-btn:is(:hover, :focus, :active) svg path {
+    stroke: var(--red);
 }
 
 /* Webform Section */
@@ -1038,7 +1142,6 @@ button {
 
 .webform-section:before {
     content: "";
-    background-image: url(http://logistics.test/wp-content/uploads/2024/07/abous-us-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1149,7 +1252,6 @@ button {
     text-align: center;
     margin-bottom: var(--_heading-margin-bottom);
     word-wrap: balance;
-    letter-spacing: 0.002em;
 }
 
 .accordion-header {
@@ -1164,7 +1266,7 @@ button {
 .accordion-header h3 {
     font-size: var(--_question-fs);
     font-weight: 600; 
-    font-family: "CodePro Medium";
+    font-family: "Source Regular";
     padding-block: var(--_item-padding-block);
 }
 
@@ -1346,8 +1448,12 @@ button {
         --_carousel-margin-bottom: 30px;
         --_btn-fs: 16px;
         --_review-fs: 16px;
-        --_gaps: 1;
-        --_slides: 2;
+        --_gaps: 0;
+        --_slides: 1;
+    }
+
+    .carousel {
+        grid-template-columns: 1fr 1fr;
     }
 
     .letters-section {
@@ -1404,7 +1510,7 @@ button {
         display: none;
     }
     .social-icons-flex-group {
-        position: absolute;
+        position: fixed;
         bottom: 20px;
         right: 20px;
         flex-direction: column;
@@ -1474,7 +1580,7 @@ button {
 
     .serv-img {
         left: 140px;
-        bottom: 25%;
+        bottom: 20%;
     }
 
     .serv__card.last-card .serv__find-more-btn {
@@ -1527,6 +1633,13 @@ button {
         --_review-fs: 14px;
         --_gaps: 0;
         --_slides: 1;
+    }
+    .carousel {
+        grid-template-columns: 1fr;
+    }
+    .slide-video {
+        order: -1;
+        height: 235px;
     }
     .letters-section {
         --_heading-fs: 28px;
@@ -1610,7 +1723,7 @@ button {
     }
     .serv-img {
         left: 45vw;
-        bottom: 26%;
+        bottom: 22%;
         height: 120px;
     }
 

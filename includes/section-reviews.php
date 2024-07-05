@@ -1,5 +1,5 @@
 <section class="reviews-section">
-    <h2>Люди нам доверяют</h2>
+    <h2>Люди нам <span class="red-text">доверяют</span></h2>
     <div class="carousel">
         <div class="carousel-track-container">
             <ul class="carousel-track">
@@ -19,7 +19,7 @@
                             </div>
                         </div>
                         <div class="review-content">
-                            Финальная цена оказалась даже не много ниже,чему я была приятно удивлена,перевозка выполнена качественно, все сроки соблюдены за что огромное спасибо.
+                            Финальная цена оказалась даже не много ниже, чему я была приятно удивлена, перевозка выполнена качественно, все сроки соблюдены за что огромное спасибо.
                         </div>
                     </div>
                 </li>
@@ -42,9 +42,6 @@
                             Цена соответствовала заявленной. Всю работу выполнили быстро и качественно. Вежливость, главное качество. Всё прошло отлично.
                         </div>
                     </div>
-                </li>
-                <li class="carousel-slide slide-video">
-                    <a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/video-review.png';?>" alt="Image 3"></a>
                 </li>
                 <li class="carousel-slide">
                     <div class="review">
@@ -87,6 +84,9 @@
                     </div>
                 </li>
             </ul>
+        </div>
+        <div class="slide-video">
+            <a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/video-review.png';?>" alt="Image 3"></a>
         </div>
     </div>
     <div class="carousel-controls-wrapper">
