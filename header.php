@@ -9,8 +9,8 @@
 <body>
 <header class="header-main centering">
     <div class="header-main__top-line">
-        <div>+7 499 113-55-59</div>
-        <div class="top-line__email">info@mtc-logistic.com</div>
+        <div><a href="+74991135559">+7 499 113-55-59</a></div>
+        <div class="top-line__email"><a href="mailto:info@mtc-logistic.com">info@mtc-logistic.com</a></div>
         <div class="working-hours">с 10:00 до 18:00 по Москве</div>
         <div class="location-svg-holder"><img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/location.svg';?>" alt="Белый значок геолокации"> Москва</div>
     </div>

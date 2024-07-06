@@ -79,7 +79,52 @@
                             </div>
                         </div>
                         <div class="review-content">
-                            Всё прошло хорошо, продавец очень хороший и вежливый, обсудили всё за чашечкой кофе и спокойно договорились)
+                            Всё прошло хорошо, продавец очень хороший и вежливый, обсудили всё за чашечкой кофе и спокойно договорились
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel-slide">
+                    <div class="review">
+                        <div class="review-top">
+                            <div class="review-name-wrapper">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/avatar-5.png';?>" alt="Аватар аккаунта Гугл">
+                                <div>Дольган</div>
+                            </div>
+                            <div class="review-stars-wrapper">
+                            <?php
+                                for ($i = 1; $i <= 5; $i++) {
+                                    echo '<img src="' . get_template_directory_uri() . '/assets/images/svgs/star-review.svg" alt="Желтая звезда">';
+                                }
+                                ;?>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            Сначала получил очень хорошую консультацию, потом согласовали цены даже ниже, чем были названы во время консультации, ну а сам сервис-нет слов, один восторг! Работают профессионалы!
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel-slide">
+                    <div class="review">
+                        <div class="review-top">
+                            <div class="review-name-wrapper">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/avatar-6.png';?>" alt="Аватар аккаунта Гугл">
+                                <div>Александр</div>
+                            </div>
+                            <div class="review-stars-wrapper">
+                            <?php
+                                for ($i = 1; $i <= 5; $i++) {
+                                    echo '<img src="' . get_template_directory_uri() . '/assets/images/svgs/star-review.svg" alt="Желтая звезда">';
+                                }
+                                ;?>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            Ребята, спасибо огромное!
+                            Отправили из Москвы в ЕКБ контейнер в кратчайшик сроки.
+                            Забрали свои контейнеровозом, обычно когда пишут «свой автопарк», в итоге вывозит непонятно кто!
+                            Проверил, действительно свои контейнеровозы.
+                            Спасибо большое!
+                            Радим, отдельная благодарность за профессиональную работу!
                         </div>
                     </div>
                 </li>

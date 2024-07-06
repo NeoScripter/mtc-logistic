@@ -32,8 +32,8 @@
             <h3>Контакты</h3>
             <div class="footer__flex-contacts">
                 <div class="footer__links-wrapper">
-                    <p class="footer__tel">+7 499 113-55-59</p>
-                    <p>info@mtc-logistic.com</p>
+                    <a href="tel:+74991135559" class="footer__tel">+7 499 113-55-59</a>
+                    <a href="mailto:info@mtc-logistic.com">info@mtc-logistic.com</a>
                     <div class="footer__social-links">
                         <a href="" class="footer__social-link">
                             <?php include get_template_directory() . '/assets/images/svgs/telegram.svg';?>

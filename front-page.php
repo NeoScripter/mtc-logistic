@@ -70,7 +70,9 @@
                     </div>
                 </div>
             </div>
-            <div class="banner-img-wrapper"><img class="banner-img" src="<?php echo get_template_directory_uri() . '/assets/images/main-header.png';?>" alt="Большой красный грузовик с контейнером">
+            <div class="banner-img-wrapper">
+                <img class="banner-img low-rez" src="<?php echo get_template_directory_uri() . '/assets/images/main-header-low-rez.png';?>" alt="Большой красный грузовик с контейнером">
+                <img class="banner-img high-rez" src="<?php echo get_template_directory_uri() . '/assets/images/main-header.png';?>" alt="Большой красный грузовик с контейнером">
             </div>
     </section>
     <section class="services-section">
@@ -109,7 +111,7 @@
         </div>
     </section>
     <section class="steps-section">
-        <h2>До получения груза всего 5 шагов</h2>
+        <h2>До получения груза всего <span class="red-text">5 шагов</span></h2>
         <div class="steps-wrapper">
             <div class="step-flex-element">
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/request.svg';?>" alt="Заявка">
@@ -196,7 +198,10 @@
                     <div class="accordion-item">
                         <div class="accordion-header">
                             <h3><?php echo esc_html($question); ?></h3>
-                            <img class="accordion-svg" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/accordion-plus.svg';?>" alt="Плюсик">
+                            <img class="accordion-svg" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/accordion-plus.svg';?>" 
+                            alt="Плюс">
+                            <img class="accordion-svg accordion-svg-hidden" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/accordion-minus.svg';?>" 
+                            alt="Минус">
                         </div>
                         <div class="accordion-content">
                             <?php echo $answer;?>

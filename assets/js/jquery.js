@@ -31,11 +31,19 @@
 
     function initAccordion() {
         $(".accordion-content").hide();
-
+    
         $(".accordion-header").click(function () {
-            $(this).next(".accordion-content").slideToggle();
-
-            $(".accordion-content").not($(this).next()).slideUp();
+            const content = $(this).next(".accordion-content");
+            const svgPlus = $(this).find(".accordion-svg").first();
+            const svgMinus = $(this).find(".accordion-svg").last();
+    
+            content.slideToggle();
+            svgPlus.toggleClass("accordion-svg-hidden");
+            svgMinus.toggleClass("accordion-svg-hidden");
+    
+            $(".accordion-content").not(content).slideUp();
+            $(".accordion-content").not(content).prev(".accordion-header").find(".accordion-svg").first().removeClass("accordion-svg-hidden");
+            $(".accordion-content").not(content).prev(".accordion-header").find(".accordion-svg").last().addClass("accordion-svg-hidden");
         });
     }
 
