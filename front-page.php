@@ -110,31 +110,7 @@
             </div>
         </div>
     </section>
-    <section class="steps-section">
-        <h2>До получения груза всего <span class="red-text">5 шагов</span></h2>
-        <div class="steps-wrapper">
-            <div class="step-flex-element">
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/request.svg';?>" alt="Заявка">
-                Заявка
-            </div>
-            <div class="step-flex-element">
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/calc.svg';?>" alt="Расчёт">
-                Расчёт
-            </div>
-            <div class="step-flex-element">
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/contract.svg';?>" alt="Договор">
-                Договор
-            </div>
-            <div class="step-flex-element">
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/delivery.svg';?>" alt="Доставка">
-                Доставка
-            </div>
-            <div class="step-flex-element">
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/payment.svg';?>" alt="Оплата">
-                Оплата
-            </div>
-        </div>
-    </section>
+    <?php get_template_part('includes/section','steps'); ?>
     <?php get_template_part('includes/section','reviews'); ?>
     <?php get_template_part('includes/section','about'); ?>
     <section class="letters-section">
@@ -161,57 +137,7 @@
             </div>
         </div>
     </section>
-    <section class="webform-section">
-        <h2>Оставьте заявку на бесплатную консультацию</h2>
-        <p class="form-subheading">мы свяжемся с вами в ближайшее время</p>
-        <form class="contact-webform" action="">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Телефон">
-            <button class="submit-btn animated-btn-1">Заказать консультацию</button>
-        </form>
-        <p class="policy-consent">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных</p>
-    </section>
-
-    <style>
-        .accordion__img-wrapper::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 20;
-        width: var(--_img-width);
-        height: 100%;
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/accordion-desktop.png';?>);
-        background-size: cover;
-        background-position: right center;
-        background-repeat: no-repeat;
-}
-    </style>
-    <section class="accordion-section">
-        <div class="accordion__img-wrapper"></div>
-        <div class="accordion">
-            <h2>Часто задаваемые <span class="red-text">вопросы</span></h2>
-            <?php for ($i = 1; $i <= 10; $i++) {
-                $question = get_field('question_' . $i);
-                $answer = get_field('answer_' . $i);
-                if ($question && $answer) : ?>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h3><?php echo esc_html($question); ?></h3>
-                            <img class="accordion-svg" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/accordion-plus.svg';?>" 
-                            alt="Плюс">
-                            <img class="accordion-svg accordion-svg-hidden" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/accordion-minus.svg';?>" 
-                            alt="Минус">
-                        </div>
-                        <div class="accordion-content">
-                            <?php echo $answer;?>
-                        </div>
-                    </div>
-                <?php endif; 
-                } ?>
-        </div>
-        <img class="accordion-bg-img__mobile" src="<?php echo get_template_directory_uri() . '/assets/images/accordion-mobile.png';?>" alt="Большой красный грузовик с контейнером">
-    </section>
+    <?php get_template_part('includes/section','webform'); ?>
+    <?php get_template_part('includes/section','accordion'); ?>
 </main>
-
 <?php get_footer(); ?>

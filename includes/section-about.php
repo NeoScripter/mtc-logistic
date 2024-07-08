@@ -1,5 +1,13 @@
+<?php
+if (is_page('Home')) {
+    $section_heading = 'Коротко о нашей компании';
+} else {
+    $section_heading = 'Почему мы?';
+}
+?>
+
 <section class="about-us-section">
-    <h2>Коротко о нашей компании</h2>
+    <h2><?php echo $section_heading; ?></h2>
     <div class="about-us-flex-group">
         <div class="about__flex-item">
             <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/about-1.svg';?>" alt="Красный грузовик" class="about-us-svg">

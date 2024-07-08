@@ -66,6 +66,32 @@
     .webform-section:before {
         background-image: url(<?php echo get_template_directory_uri() . '/assets/images/abous-us-bg.png';?>);
     }
+    .arrow-li::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 10px;
+        height: 5px; 
+        background-image: url('<?php echo get_template_directory_uri(); ?> . /assets/images/svgs/arrow-down.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+    .accordion__img-wrapper::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 20;
+        width: var(--_img-width);
+        height: 100%;
+        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/accordion-desktop.png';?>);
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
 </style>
 <?php wp_footer();?>
 </body>
