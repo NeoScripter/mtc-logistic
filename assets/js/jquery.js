@@ -50,17 +50,17 @@
     function initDropdownMenu() {
         let hideTimeout;
     
-        $(".arrow-li").on("mouseover", function () {
+        $(".nav-main .arrow-li").on("mouseover", function () {
             clearTimeout(hideTimeout);
             $(this).children("ul").fadeIn().css("display", "flex");
             $(this).addClass('rotated');
         });
     
-        $(".arrow-li ul").on("mouseover", function () {
+        $(".nav-main .arrow-li ul").on("mouseover", function () {
             clearTimeout(hideTimeout);
         });
     
-        $(".arrow-li").on("mouseleave", function () {
+        $(".nav-main .arrow-li").on("mouseleave", function () {
             const dropdownItem = $(this);
             hideTimeout = setTimeout(function () {
                 dropdownItem.children("ul").fadeOut();
@@ -68,7 +68,7 @@
             }, 500);
         });
     
-        $(".arrow-li ul").on("mouseleave", function () {
+        $(".nav-main .arrow-li ul").on("mouseleave", function () {
             const dropdownItem = $(this).parent();
             hideTimeout = setTimeout(function () {
                 dropdownItem.children("ul").fadeOut();

@@ -1,5 +1,13 @@
+<?php
+if (is_page('Home')) {
+    $section_heading = 'До получения груза всего <span class="red-text">5 шагов</span>';
+} else {
+    $section_heading = 'Процесс <span class="red-text">сотрудничества</span>';
+}
+?>
+
 <section class="steps-section">
-    <h2>До получения груза всего <span class="red-text">5 шагов</span></h2>
+    <h2><?php echo $section_heading; ?></h2>
     <div class="steps-wrapper">
         <div class="step-flex-element">
             <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/request.svg';?>" alt="Заявка">
