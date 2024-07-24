@@ -28,7 +28,7 @@
     <section class="home-banner">
             <div class="home-banner__content">
                 <div class="home-banner__top">
-                    <h1 class="home-banner__heading">Перевозка грузов<br><span class="red-text">по России, Белорусии и из Китая</span></h1>
+                    <h1 class="home-banner__heading">Перевозка грузов<br><span class="red-text">по России, Белоруси и из Китая</span></h1>
                     <div class="home-banner__flex-group">
                         <div class="home-banner__flex-subgroup">
                             <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/red-tick.svg';?>" alt="Красная галочка в красном кружке">
@@ -78,7 +78,7 @@
     <section class="services-section">
         <div class="serv__flex-group">
             <div class="serv__card">
-                <h3><span class="red-text">Автоперевозка</span> морских контейнеров по России и Белорусии</h3>
+                <h3><span class="red-text">Автоперевозка</span> морских контейнеров по России и Белоруси</h3>
                 <p>От 3 часов</p>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-1.png';?>" alt="Красная фура с контейнером" class="serv-img">
                 <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
@@ -114,7 +114,7 @@
     <?php get_template_part('includes/section','reviews'); ?>
     <?php get_template_part('includes/section','about'); ?>
     <section class="letters-section">
-    <h2><span class="red-text">Благодарственные</span> письма</h2>
+    <h2 class="heading-large"><span class="red-text">Благодарственные</span> письма</h2>
         <div class="letters-carousel">
             <div class="letters-carousel-track-container">
                 <ul class="letters-carousel-track">

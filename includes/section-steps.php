@@ -7,7 +7,7 @@ if (is_page('Home')) {
 ?>
 
 <section class="steps-section">
-    <h2><?php echo $section_heading; ?></h2>
+    <h2 class="heading-large"><?php echo $section_heading; ?></h2>
     <div class="steps-wrapper">
         <div class="step-flex-element">
             <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/request.svg';?>" alt="Заявка">

@@ -6,5 +6,5 @@
             <input type="text" placeholder="Телефон">
             <button class="submit-btn animated-btn-1">Заказать консультацию</button>
         </form>
-    <p class="policy-consent">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных</p>
+    <a class="policy-consent">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных</a>
 </section>

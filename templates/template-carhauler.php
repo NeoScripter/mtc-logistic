@@ -32,38 +32,50 @@ get_header();
     </div>
 </div>
 <main class="home-main centering">
-    <section class="hauler-banner">
-    <div class="social-icons-flex-group">
-        <a href="" class="social-icons-flex-subgroup">
-            <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/telegram.svg';?></div>
-            <div class="banner-bottom__text-wrapper">Telegram</div>
-        </a>
-        <a href="" class="social-icons-flex-subgroup">
-            <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/whatsapp.svg';?></div>
-            <div class="banner-bottom__text-wrapper">WhatsApp</div>
-        </a>
-    </div>
+    <section class="hauler-banner car-banner-section">
+        <div class="social-icons-flex-group">
+            <a href="" class="social-icons-flex-subgroup">
+                <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/telegram.svg';?></div>
+                <div class="banner-bottom__text-wrapper">Telegram</div>
+            </a>
+            <a href="" class="social-icons-flex-subgroup">
+                <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/whatsapp.svg';?></div>
+                <div class="banner-bottom__text-wrapper">WhatsApp</div>
+            </a>
+        </div>
 
-    <h2 class="hauler-banner__heading"><span class="red-text">Автовоз</span> для доставки автомобилей по России и из Китая</h2>
-    <div class="hauler__subheading-wrapper">
-        <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/red-tick.svg"; ?>" alt="красная галочка">
-        <h3>Надёжная и безопасная доставка автомобилей</h3>
-    </div>
-    <div class="hauler-banner__grid-group">
-        <div class="hb__flex-group">
-            <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg1.svg"; ?>" alt="image1">
-            <p>Сопроводительная документация</p>
+        <h2 class="hauler-banner__heading car-banner__heading"><span class="red-text">Автовоз</span> для доставки автомобилей по России и из Китая</h2>
+        <div class="hauler__subheading-wrapper car-banner__subheading-wrapper">
+            <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/red-tick.svg"; ?>" alt="красная галочка">
+            <h3>Надёжная и безопасная доставка автомобилей</h3>
         </div>
-        <div class="hb__flex-group">
-            <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg2.svg"; ?>" alt="image2">
-            <p>Специально оборудованные автовозы</p>
+        <div class="hauler-banner__grid-group car-banner__grid-group">
+            <div class="hb__flex-group car-banner__flex-group">
+                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg1.svg"; ?>" alt="image1">
+                <p>Сопроводительная документация</p>
+            </div>
+            <div class="hb__flex-group car-banner__flex-group">
+                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg2.svg"; ?>" alt="image2">
+                <p>Специально оборудованные автовозы</p>
+            </div>
+            <div class="hb__flex-group car-banner__flex-group">
+                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg3.svg"; ?>" alt="image3">
+                <p>Страхование на весь маршрут</p>
+            </div>
         </div>
-        <div class="hb__flex-group">
-            <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg3.svg"; ?>" alt="image3">
-            <p>Страхование на весь маршрут</p>
+        <img src="<?php echo get_template_directory_uri() . "/assets/images/hauler-banner.png"; ?>" alt="красный грузовик" class="hauler-banner-bg car-banner-bg">
+    </section>
+    <section class="price-calc-section">
+        <h2 class="heading-large">Расчёт <span class="red-text">стоимости</span></h2>
+        <div class="price-calc-title">
+            <h3 class="h3-price-title">Стоимость доставки автомобиля автовозом по России и из Китая зависит от нескольких факторов</h3>
+            <div class="price-calc__grid-group">
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-1.svg"; ?>" alt="Маршрут и расстояние">Маршрут и расстояние</div>
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-2.svg"; ?>" alt="Тип автовоза">Тип автовоза</div>
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-3.svg"; ?>" alt="Габариты и вес автомобиля">Габариты и вес автомобиля</div>
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-4.svg"; ?>" alt="Дополнительные услуги">Дополнительные услуги</div>
+            </div>
         </div>
-    </div>
-    <img src="<?php echo get_template_directory_uri() . "/assets/images/hauler-banner.png"; ?>" alt="красный грузовик" class="hauler-banner-bg">
     </section>
     <?php get_template_part('includes/section','steps'); ?>
     <?php get_template_part('includes/section','accordion'); ?>

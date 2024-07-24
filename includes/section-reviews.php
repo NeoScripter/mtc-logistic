@@ -1,5 +1,5 @@
 <section class="reviews-section">
-    <h2>Люди нам <span class="red-text">доверяют</span></h2>
+    <h2 class="heading-large">Люди нам <span class="red-text">доверяют</span></h2>
     <div class="carousel">
         <div class="carousel-track-container">
             <ul class="carousel-track">
@@ -131,7 +131,7 @@
             </ul>
         </div>
         <div class="slide-video">
-            <a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/video-review.png';?>" alt="Image 3"></a>
+            <a href="https://youtu.be/RpSQ0jFtHIc?si=oY-UkioSQeiy-9B6" target="_blank"><img src="<?php echo get_template_directory_uri() . '/assets/images/video-review.png';?>" alt="Image 3"></a>
         </div>
     </div>
     <div class="carousel-controls-wrapper">

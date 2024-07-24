@@ -53,7 +53,7 @@
     <div class="footer-bottom">
         <p>© MTC Logistic, 2010–2024</p>
         <div class="logo-footer-wrapper"><img class="logo-footer" src="<?php echo get_template_directory_uri() . '/assets/images/logo-white.png';?>" alt="MTC Logistic логотип"></div>
-        <p class="footer__privacy-policy">Политика конфиденциальности</p>
+        <a class="footer__privacy-policy">Политика конфиденциальности</a>
     </div>
 </footer>
 <style>
@@ -66,7 +66,7 @@
     .webform-section:before {
         background-image: url(<?php echo get_template_directory_uri() . '/assets/images/abous-us-bg.png';?>);
     }
-    .arrow-li::before {
+    .header-main__nav-wrapper .arrow-li::before {
         content: "";
         position: absolute;
         right: 0;
