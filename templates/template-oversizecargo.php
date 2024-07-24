@@ -69,6 +69,41 @@ get_header();
         </div>
         <img src="<?php echo get_template_directory_uri() . "/assets/images/oversized-cargo-bg.png"; ?>" alt="красный грузовик" class="car-banner-bg">
     </section>
+    <section class="price-calc-section">
+        <h2 class="heading-large">Расчёт <span class="red-text">стоимости</span></h2>
+        <div class="price-calc-title">
+            <h3 class="h3-price-title">Стоимость перевозки негабаритных грузов зависит от нескольких факторов</h3>
+            <div class="price-calc__grid-group">
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-1.svg"; ?>" alt="Маршрут и расстояние">Маршрут и расстояние</div>
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-2.svg"; ?>" alt="Тип автовоза">Тип транспортного средства</div>
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/car-bnr-svg-1.svg"; ?>" alt="Габариты и вес автомобиля">Габариты груза</div>
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-4.svg"; ?>" alt="Дополнительные услуги">Дополнительные услуги</div>
+            </div>
+        </div>
+    </section>
+    <section class="calculator-section">
+        <div class="calc__tab-wrapper">
+            <div class="calc__step calc__current-step">1 шаг</div>
+            <div class="calc__step">2 шаг</div>
+            <div class="calc__step">3 шаг</div>
+            <div class="calc__step">4 шаг</div>
+        </div>
+        <div class="quiz-wrapper">
+            <h3 class="quiz-heading">Выберите тип, марку и модель вашего транспортного средства</h3>
+            <div class="quiz__input-wrapper">
+                <input type="text" placeholder="Тип транспорта">
+                <div class="quiz__example-wrapper">
+                    <input type="text" placeholder="Марка транспорта">
+                    <div class="quiz__input-example">например : Volkswagen</div>
+                </div>
+                <div class="quiz__example-wrapper">
+                    <input type="text" placeholder="Модель транспорта">
+                    <div class="quiz__input-example">например : Polo</div>
+                </div>
+                <button class="quiz__continue-btn animated-btn-2">Продолжить</button>
+            </div>
+        </div>
+    </section>
     <?php get_template_part('includes/section','steps'); ?>
     <?php get_template_part('includes/section','accordion'); ?>
     <?php get_template_part('includes/section','about'); ?>
