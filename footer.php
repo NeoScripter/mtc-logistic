@@ -36,13 +36,13 @@
                     <a href="mailto:info@mtc-logistic.com">info@mtc-logistic.com</a>
                     <div class="footer__social-links">
                         <a href="" class="footer__social-link">
-                            <?php include get_template_directory() . '/assets/images/svgs/telegram.svg';?>
+                            <img class="footer__social-link-img" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/telegram.svg';?>" alt="MTC Logistic логотип">
                         </a>
                         <a href="" class="footer__social-link">
-                            <?php include get_template_directory() . '/assets/images/svgs/whatsapp.svg';?>
+                            <img class="footer__social-link-img" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/whatsapp.svg';?>" alt="MTC Logistic логотип">
                         </a>
                         <a href="" class="footer__social-link">
-                            <?php include get_template_directory() . '/assets/images/svgs/vk.svg';?>
+                            <img class="" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/vk.svg';?>" alt="MTC Logistic логотип">
                         </a>
                     </div>
                 </div>
@@ -91,6 +91,9 @@
         background-size: cover;
         background-position: right center;
         background-repeat: no-repeat;
+    }
+    .footer__social-link-img {
+        height: 47px;
     }
 </style>
 <?php wp_footer();?>

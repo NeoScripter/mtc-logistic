@@ -77,6 +77,29 @@ get_header();
             </div>
         </div>
     </section>
+    <section class="calculator-section">
+        <div class="calc__tab-wrapper">
+            <div class="calc__step calc__current-step">1 шаг</div>
+            <div class="calc__step">2 шаг</div>
+            <div class="calc__step">3 шаг</div>
+            <div class="calc__step">4 шаг</div>
+        </div>
+        <div class="quiz-wrapper">
+            <h3 class="quiz-heading">Выберите тип, марку и модель вашего транспортного средства</h3>
+            <div class="quiz__input-wrapper">
+                <input type="text" placeholder="Тип транспорта">
+                <div class="quiz__example-wrapper">
+                    <input type="text" placeholder="Марка транспорта">
+                    <div class="quiz__input-example">например : Volkswagen</div>
+                </div>
+                <div class="quiz__example-wrapper">
+                    <input type="text" placeholder="Модель транспорта">
+                    <div class="quiz__input-example">например : Polo</div>
+                </div>
+                <button class="quiz__continue-btn animated-btn-2">Продолжить</button>
+            </div>
+        </div>
+    </section>
     <?php get_template_part('includes/section','steps'); ?>
     <?php get_template_part('includes/section','accordion'); ?>
     <?php get_template_part('includes/section','about'); ?>
