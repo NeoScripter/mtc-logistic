@@ -2,8 +2,8 @@
 <div class="popup-menu-overlay">
     <div class="popup-menu">
         <div class="popup-menu__logo-wrapper">
-            <img src="<?php echo get_template_directory_uri() .
-                "/assets/images/logo-black.png"; ?>" alt="logo" class="popup-logo">
+            <a href="<?php echo home_url(); ?>" class="homepage-link"><img src="<?php echo get_template_directory_uri() .
+            "/assets/images/logo-black.png"; ?>" alt="logo" class="popup-logo"></a>
             <img src="<?php echo get_template_directory_uri() .
                 "/assets/images/svgs/close.svg"; ?>" alt="burger-menu" class="close-burger-menu">
         </div>
@@ -72,7 +72,7 @@
             </div>
             <div class="banner-img-wrapper">
                 <img class="banner-img low-rez" src="<?php echo get_template_directory_uri() . '/assets/images/main-header-low-rez.png';?>" alt="Большой красный грузовик с контейнером">
-                <img class="banner-img high-rez" src="<?php echo get_template_directory_uri() . '/assets/images/main-header.png';?>" alt="Большой красный грузовик с контейнером">
+                <img class="banner-img high-rez" src="<?php echo get_template_directory_uri() . '/assets/images/main-header.webp';?>" alt="Большой красный грузовик с контейнером">
             </div>
     </section>
     <section class="services-section">
@@ -80,32 +80,32 @@
             <div class="serv__card">
                 <h3><span class="red-text">Автоперевозка</span> морских контейнеров по России и Белоруси</h3>
                 <p>От 3 часов</p>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-1.png';?>" alt="Красная фура с контейнером" class="serv-img">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-1.webp';?>" alt="Красная фура с контейнером" class="serv-img">
                 <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
             </div>
             <div class="serv__card">
                 <h3><span class="red-text">ЖД доставка</span> морских контейнеров по России и из Китая</h3>
                 <p>4–17 дней</p>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-2.png';?>" alt="Красная фура с контейнером" class="serv-img">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-2.webp';?>" alt="Красная фура с контейнером" class="serv-img">
                 <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
             </div>
             <div class="serv__card">
                 <h3><span class="red-text">Автовоз</span> для доставки автомобилей по России и из Китая</h3>
                 <p>1–12 дней</p>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-3.png';?>" alt="Красная фура с контейнером" class="serv-img">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-3.webp';?>" alt="Красная фура с контейнером" class="serv-img">
                 <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
             </div>
             <div class="serv__card">
                 <h3>⁠Перевозка <span class="red-text">негабаритных</span> грузов</h3>
                 <p>1–12 дней</p>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-4.png';?>" alt="Красная фура с контейнером" class="serv-img">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-4.webp';?>" alt="Красная фура с контейнером" class="serv-img">
                 <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
             </div>
             <div class="serv__card last-card">
                 <h3>Доставка из Китая <span class="red-text">«под ключ»</span></h3>
                 <p>От завода в Китае до вашего порога, быстро и без хлопот. Мы сделаем все, пока вы занимаетесь своим бизнесом</p>
                 <p>До 25 дней</p>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-5.png';?>" alt="Красная фура с контейнером" class="serv-img">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-5.webp';?>" alt="Красная фура с контейнером" class="serv-img">
                 <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
             </div>
         </div>

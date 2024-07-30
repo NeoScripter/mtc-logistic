@@ -2,15 +2,14 @@
 /**
  * Template Name: Sea Cargo
  */
-get_header(); 
 ?>
 
 <?php get_header(); ?>
 <div class="popup-menu-overlay">
     <div class="popup-menu">
         <div class="popup-menu__logo-wrapper">
-            <img src="<?php echo get_template_directory_uri() .
-                "/assets/images/logo-black.png"; ?>" alt="logo" class="popup-logo">
+            <a href="<?php echo home_url(); ?>" class="homepage-link"><img src="<?php echo get_template_directory_uri() .
+            "/assets/images/logo-black.png"; ?>" alt="logo" class="popup-logo"></a>
             <img src="<?php echo get_template_directory_uri() .
                 "/assets/images/svgs/close.svg"; ?>" alt="burger-menu" class="close-burger-menu">
         </div>
@@ -79,7 +78,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <img src="<?php echo get_template_directory_uri() . "/assets/images/seacargo-bg.png"; ?>" alt="красный грузовик" class="car-banner-bg">
+        <img src="<?php echo get_template_directory_uri() . "/assets/images/seacargo-bg.webp"; ?>" alt="красный грузовик" class="car-banner-bg">
     </section>
     <section class="price-calc-section">
         <h2 class="heading-large">Расчёт <span class="red-text">стоимости</span></h2>
@@ -122,5 +121,15 @@ get_header();
     <?php get_template_part('includes/section','reviews'); ?>
     <?php get_template_part('includes/section','webform'); ?>
 </main>
+<style>
+    .accordion-section {
+        margin-bottom: 50px;
+    }
+    @media screen and (max-width: 900px) {
+        .accordion-section {
+            margin-bottom: 100px;
+        }
+    }
+</style>
 
 <?php get_footer(); ?>

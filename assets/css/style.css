@@ -12,9 +12,9 @@ html {
 body {
     overflow-x: hidden;
     overflow-x: clip;
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: "Source Regular";
+    background-size: contain;
+    background-repeat: repeat;
    /*  border-image: linear-gradient(rgba(245, 245, 245, 0.5), rgba(245, 245, 245, 0.5)) 50%/50%;  */
    /*  border-image: fill 0 linear-gradient(hsl(0, 0%, 96%, 0.5), hsl(0, 0%, 96%, 0.5)); */
 }
@@ -70,6 +70,10 @@ button {
     font-weight: 400;
 }
 
+.homepage-link {
+    display: block;
+}
+
 /* Header */
 
 .header-main {
@@ -123,7 +127,12 @@ button {
     transition: opacity 1s ease-in-out;
 }
 
-.header-main-logo-small {
+/* .header-main-logo-small {
+    width: 80px;
+    display: none;
+} */
+
+.homepage-link:has(.header-main-logo-small) {
     width: 80px;
     display: none;
 }
@@ -168,7 +177,18 @@ header .arrow-li {
     padding: 10px;
     gap: 10px;
     font-size: 16px; 
+}
 
+.nav-popup .arrow-li {
+    position: relative;
+    width: max-content;
+    padding-right: 1em;
+    white-space: nowrap;
+}
+
+.nav-popup .arrow-li ul {
+    position: static;
+    border-top: none;
 }
 
 .arrow-li ul li:is(:hover, :focus-visible, :active) {
@@ -182,6 +202,14 @@ header .arrow-li {
 
 .nav-main__ul a:is(:active) {
     color: var(--red);
+}
+
+.nav-popup a:is(:hover, :focus, :active) {
+    color: #505050;
+}
+
+.nav-main__ul li:is(:hover, :focus, :active) {
+    color: #505050;
 }
 
 .header-main__btn-group .header-btn {
@@ -394,6 +422,7 @@ header .arrow-li {
     align-items: center;
     margin-top: 20px;
     gap: 30px;
+    z-index: 10;
 }
 
 .social-icons-flex-subgroup {
@@ -1497,6 +1526,53 @@ header .arrow-li {
     width: var(--_heading-width);
 }
 
+/* Sea-Rus-Bel Section */ 
+
+.sea-rus-bel-section {
+    --_heading-width: 963px;
+    --_grid-group-width: 100%;
+    --_img-width: 582px;
+    --_img-height: 364px;
+    --_img-offset-left: 904px;
+    --_img-offset-top: -55px;
+    --_grid-cols: 4;
+
+    --_flex-group-gap: 10px;
+    --_grid-subheading-fs: 22px;
+}
+
+.seacargo__grid-subheading {
+    font-size: var(--_grid-subheading-fs);
+    font-weight: 600;
+    font-family: inherit;
+    margin-bottom: 5px;
+}
+
+.sea-rus-bel-section .car-banner__flex-group {
+    gap: var(--_flex-group-gap);
+}
+
+.sea-rus-bel-section .car-banner__subheading-wrapper {
+    align-items: flex-start;
+    width: var(--_heading-width);
+}
+
+.sea-rus-bel-section .car-banner__grid-group {
+    width: var(--_grid-group-width);
+    grid-template-columns: repeat(var(--_grid-cols), 1fr);
+}
+
+.sea-rus-bel-section .car-banner-bg {
+    top: var(--_img-offset-top);
+    left: var(--_img-offset-left);
+    width: var(--_img-width);
+    height: var(--_img-height);
+}
+
+.sea-rus-bel-section .car-banner__heading {
+    width: var(--_heading-width);
+}
+
 /* Carhauler Section */
 
 .hauler-banner .social-icons-flex-group {
@@ -1689,6 +1765,14 @@ header .arrow-li {
         --_img-offset-top: -40px;
         --_grid-group-width: 100%;
     }
+    .sea-rus-bel-section {
+        --_heading-width: 567px;
+        --_img-width: 548px;
+        --_img-height: 357px;
+        --_img-offset-left: 505px;
+        --_img-offset-top: -20px;
+        --_grid-cols: 2;
+    }
     .oversized-cargo-section {
         --_heading-width: 570px;
         --_grid-group-width: 100%;
@@ -1834,6 +1918,14 @@ header .arrow-li {
         --_flex-group-gap: 5px;
         --_grid-subheading-fs: 20px;
     }
+    .sea-rus-bel-section {
+        --_heading-width: 504px;
+        --_img-width: 489px;
+        --_img-height: 305px;
+        --_img-offset-left: 430px;
+        --_img-offset-top: 125px;
+        --_grid-cols: 2;
+    }
     .price-calc-section {
         --_title-fs: 28px;
         --_grid-group-fs: 24px;
@@ -1882,6 +1974,14 @@ header .arrow-li {
         --_flex-group-gap: 5px;
         --_grid-subheading-fs: 18px;
     }
+    .sea-rus-bel-section {
+        --_heading-width: 100%;
+        --_img-width: calc(361px * 1.3);
+        --_img-height: calc(235px * 1.3);;
+        --_img-offset-left: 25vw;
+        --_img-offset-top: 0px;
+        --_grid-cols: 1;
+    }
     .car-banner-section {
         --_banner-margin-top: 30px;
         --_grid-group-margin-block: 50px 0px;
@@ -1891,6 +1991,9 @@ header .arrow-li {
         --_grid-group-fs: 18px;
     }
     .seacargo-section .car-banner-bg {
+        margin-block: 20px;
+    }
+    .sea-rus-bel-section .car-banner-bg {
         margin-block: 20px;
     }
 }
@@ -1933,6 +2036,14 @@ header .arrow-li {
     
         --_flex-group-gap: 5px;
         --_grid-subheading-fs: 18px;
+    }
+    .sea-rus-bel-section {
+        --_heading-width: 100%;
+        --_img-width: 361px;
+        --_img-height: 235px;
+        --_img-offset-left: 20vw;
+        --_img-offset-top: 0px;
+        --_grid-cols: 1;
     }
     .calculator-section {
         --_tab-fs: 14px;
@@ -1990,6 +2101,12 @@ header .arrow-li {
     
         --_flex-group-gap: 5px;
         --_grid-subheading-fs: 18px;
+    }
+    .sea-rus-bel-section {
+        --_img-width: 364px;
+        --_img-height: 227px;
+        --_img-offset-left: 20px;
+        --_img-offset-top: 0px;
     }
     .price-calc-section {
         --_title-margin-block: 40px;
@@ -2292,11 +2409,10 @@ header .arrow-li {
     .header-main {
         --_top-line-fs: 14px;
     }
-
-    .header-main-logo-small {
+    .homepage-link:has(.header-main-logo-small) {
         display: block;
     }
-    .header-main-logo {
+    .homepage-link:has(.header-main-logo) {
         display: none;
     }
     .top-line__email {

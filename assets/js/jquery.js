@@ -1,4 +1,52 @@
 (function ($) {
+    function setupImageOverlay(selector) {
+        $(selector).each(function() {
+            $(this).on('click', function() {
+                const imgSrc = $(this).find('img').attr('src');
+                const $overlay = $('<div class="fullscreen-overlay"></div>');
+                $overlay.css({
+                    'opacity': '0',
+                    'transition': 'opacity 0.3s',
+                    'position': 'fixed',
+                    'top': '0',
+                    'left': '0',
+                    'width': '100%',
+                    'height': '100%',
+                    'background-color': 'rgba(0, 0, 0, 0.8)', 
+                    'display': 'flex',
+                    'justify-content': 'center',
+                    'align-items': 'center',
+                    'z-index': '1000'
+                });
+
+                const $img = $('<img>').attr('src', imgSrc);
+                $img.css({
+                    'transform': 'scale(0)',
+                    'transition': 'transform 0.5s',
+                    'object-fit': 'contain',
+                    'height': '90%',
+                    'cursor': 'pointer'
+                });
+
+                $overlay.append($img);
+                $('body').append($overlay);
+
+                setTimeout(function() {
+                    $overlay.css('opacity', '1');
+                    $img.css('transform', 'scale(1)');
+                }, 200);
+
+                $overlay.on('click', function() {
+                    $(this).css('opacity', '0');
+                    $img.css('transform', 'scale(0)');
+                    setTimeout(function() {
+                        $overlay.remove();
+                    }, 300);
+                });
+            });
+        });
+    }
+
     function initLettersCarouselControls() {
         const track = $(".letters-carousel-track");
         let slides = $(".letters-carousel-slide");
@@ -75,21 +123,41 @@
             }, 500);
         });
     }
+
+    function initPopupMenu() {
+        let hideTimeout;
     
-    $(document).ready(function() {
-        initDropdownMenu();
-    });
+        const arrowLists = $('.nav-popup .arrow-li');
+        arrowLists.each(function() {
+            const width = $(this).width(); 
+            $(this).css('max-width', width); 
+        });
+
+        $(".nav-popup .arrow-li").on("mouseover", function () {
+            clearTimeout(hideTimeout);
+            $(this).children("ul").slideDown(200).css("display", "flex");
+            $(this).addClass('rotated');
+        });
     
+        $(".nav-popup .arrow-li ul").on("mouseover", function () {
+            clearTimeout(hideTimeout);
+        });
     
-    $(document).ready(function() {
-        initDropdownMenu();
-    });
+        $(".nav-popup .arrow-li").on("mouseleave", function () {
+            const dropdownItem = $(this);
+            hideTimeout = setTimeout(function () {
+                dropdownItem.children("ul").slideUp(200);
+                dropdownItem.removeClass('rotated');
+            }, 300);
+        });
     
-    
-    $(document).ready(function() {
-        initDropdownMenu();
-    });
-    
+        $(".nav-popup .arrow-li ul").on("mouseleave", function () {
+            const dropdownItem = $(this).parent();
+            hideTimeout = setTimeout(function () {
+                dropdownItem.children("ul").slideUp();
+            }, 300);
+        });
+    }
 
     function initReviewsCarouselControls() {
         const track = $(".carousel-track");
@@ -132,10 +200,12 @@
     
     jQuery(document).ready(function ($) {
         initDropdownMenu();
+        initPopupMenu();
         initReviewsCarouselControls();
         if ($(".letters-carousel-track").length) {
             initLettersCarouselControls();
         }
         initAccordion();
+        setupImageOverlay('.letters-carousel-slide');
     });
 })(jQuery);

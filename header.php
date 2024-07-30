@@ -15,8 +15,8 @@
         <div class="location-svg-holder"><img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/location.svg';?>" alt="Белый значок геолокации"> Москва</div>
     </div>
     <div class="header-main__nav-wrapper">
-        <img class="header-main-logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo-black.png';?>" alt="MTC Logistic логотип">
-        <img class="header-main-logo-small" src="<?php echo get_template_directory_uri() . '/assets/images/logo-small.png';?>" alt="MTC Logistic логотип">
+        <a href="<?php echo home_url(); ?>" class="homepage-link"><img class="header-main-logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo-black.png';?>" alt="MTC Logistic логотип"></a>
+        <a href="<?php echo home_url(); ?>" class="homepage-link"><img class="header-main-logo-small" src="<?php echo get_template_directory_uri() . '/assets/images/logo-small.png';?>" alt="MTC Logistic логотип"></a>
         <?php
             wp_nav_menu(
                 array(

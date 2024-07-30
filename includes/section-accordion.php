@@ -20,5 +20,5 @@ $answers = ['У нас всегда есть свободные контей�
             </div>
         <?php endfor; ?>
     </div>
-    <img class="accordion-bg-img__mobile" src="<?php echo get_template_directory_uri() . '/assets/images/accordion-mobile.png';?>" alt="Большой красный грузовик с контейнером">
+    <img class="accordion-bg-img__mobile" src="<?php echo get_template_directory_uri() . '/assets/images/accordion-mobile.webp';?>" alt="Большой красный грузовик с контейнером">
 </section>

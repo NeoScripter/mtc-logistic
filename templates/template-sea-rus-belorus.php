@@ -1,10 +1,11 @@
 <?php
 /**
- * Template Name: Oversize Cargo
+ * Template Name: Sea Russia Belarus
  */
 ?>
 
 <?php get_header(); ?>
+
 <div class="popup-menu-overlay">
     <div class="popup-menu">
         <div class="popup-menu__logo-wrapper">
@@ -31,7 +32,7 @@
     </div>
 </div>
 <main class="home-main centering">
-    <section class="car-banner-section oversized-cargo-section">
+<section class="car-banner-section sea-rus-bel-section">
         <div class="social-icons-flex-group">
             <a href="" class="social-icons-flex-subgroup">
                 <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/telegram.svg';?></div>
@@ -43,39 +44,51 @@
             </a>
         </div>
 
-        <h2 class="car-banner__heading">⁠Перевозка <span class="red-text">негабаритных</span> грузов</h2>
+        <h2 class="car-banner__heading"><span class="red-text">Автоперевозка</span> морских контейнеров по России и Белорусии</h2>
         <div class="car-banner__subheading-wrapper">
             <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/red-tick.svg"; ?>" alt="красная галочка">
-            <h3>Безопасная транспортировка негабаритных и тяжеловесных грузов</h3>
+            <h3>Мы предоставляем надежную и быструю доставку морских контейнеров, гарантируя сохранность груза и соблюдение сроков</h3>
         </div>
         <div class="car-banner__grid-group">
             <div class="car-banner__flex-group">
-                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg1.svg"; ?>" alt="image1">
-                <p>Разрешение на перевозку</p>
+                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg3.svg"; ?>" alt="image1">
+                <div>
+                    <h4 class="seacargo__grid-subheading">Надежность</h4>
+                    <p>Контроль на всех этапах доставки</p>
+                </div>
             </div>
             <div class="car-banner__flex-group">
-                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-1.svg"; ?>" alt="image1">
-                <p>Разработка индивидуального маршрута</p>
+                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/speed.svg"; ?>" alt="image1">
+                <div>
+                    <h4 class="seacargo__grid-subheading">Скорость</h4>
+                    <p>Оперативная доставка в заранее оговоренные сроки</p>
+                </div>
             </div>
             <div class="car-banner__flex-group">
-                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg2.svg"; ?>" alt="image2">
-                <p>Специальная техника для негабаритных грузов</p>
+                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/location-red.svg"; ?>" alt="image2">
+                <div>
+                    <h4 class="seacargo__grid-subheading">Персонализация</h4>
+                    <p>Индивидуальный подход и адаптация под ваши потребности</p>
+                </div>
             </div>
             <div class="car-banner__flex-group">
                 <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg3.svg"; ?>" alt="image3">
-                <p>Страхование на весь маршрут</p>
+                <div>
+                    <h4 class="seacargo__grid-subheading">Безопасность</h4>
+                    <p>Современные системы отслеживания и охраны груза</p>
+                </div>
             </div>
         </div>
-        <img src="<?php echo get_template_directory_uri() . "/assets/images/oversized-cargo-bg.webp"; ?>" alt="красный грузовик" class="car-banner-bg">
+        <img src="<?php echo get_template_directory_uri() . "/assets/images/sea-rus-belr-bg.webp"; ?>" alt="красный грузовик" class="car-banner-bg">
     </section>
     <section class="price-calc-section">
         <h2 class="heading-large">Расчёт <span class="red-text">стоимости</span></h2>
         <div class="price-calc-title">
-            <h3 class="h3-price-title">Стоимость перевозки негабаритных грузов зависит от нескольких факторов</h3>
+            <h3 class="h3-price-title">Стоимость доставки морских контейнеров по России и из Китая зависит от нескольких факторов</h3>
             <div class="price-calc__grid-group">
                 <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-1.svg"; ?>" alt="Маршрут и расстояние">Маршрут и расстояние</div>
-                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-2.svg"; ?>" alt="Тип автовоза">Тип транспортного средства</div>
-                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/car-bnr-svg-1.svg"; ?>" alt="Габариты и вес автомобиля">Габариты и вес груза</div>
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/car-bnr-svg-1.svg"; ?>" alt="Тип автовоза">Габариты и вес груза</div>
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/car-bnr-svg-2.svg"; ?>" alt="Габариты и вес автомобиля">Срочность подачи транспорта</div>
                 <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-4.svg"; ?>" alt="Дополнительные услуги">Дополнительные услуги</div>
             </div>
         </div>

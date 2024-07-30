@@ -58,13 +58,13 @@
 </footer>
 <style>
     body {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/bg-pattern.png';?>);
+        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/bg-pattern.webp';?>);
     }
     .about-us-section:before {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/abous-us-bg.png';?>);
+        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/abous-us-bg.webp';?>);
     }
     .webform-section:before {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/abous-us-bg.png';?>);
+        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/abous-us-bg.webp';?>);
     }
     .header-main__nav-wrapper .arrow-li::before {
         content: "";
@@ -73,7 +73,20 @@
         top: 50%;
         width: 10px;
         height: 5px; 
-        background-image: url('<?php echo get_template_directory_uri(); ?> . /assets/images/svgs/arrow-down.svg');
+        background-image: url('<?php echo get_template_directory_uri() . '/assets/images/svgs/arrow-down.svg'; ?>');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+    .nav-popup .arrow-li::before {
+        content: "";
+        position: absolute;
+        right: -1.2rem;
+        top: 0.6rem;
+        width: 12px;
+        height: 6px; 
+        background-image: url('<?php echo get_template_directory_uri() . '/assets/images/svgs/arrow-down.svg'; ?>');
         background-size: contain;
         background-repeat: no-repeat;
         transition: transform 0.3s;
@@ -87,7 +100,7 @@
         z-index: 20;
         width: var(--_img-width);
         height: 100%;
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/accordion-desktop.png';?>);
+        background-image: url(<?php echo get_template_directory_uri() . '/assets/images/accordion-desktop.webp';?>);
         background-size: cover;
         background-position: right center;
         background-repeat: no-repeat;
