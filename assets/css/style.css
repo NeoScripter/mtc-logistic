@@ -1573,6 +1573,54 @@ header .arrow-li {
     width: var(--_heading-width);
 }
 
+/* Turnkey Delivery Section */
+
+.turnkey-delivery-section {
+    --_heading-width: 884px;
+    --_grid-group-width: 894px;
+    --_img-width: 769px;
+    --_img-height: 575px;
+    --_img-offset-left: 801px;
+    --_img-offset-top: -89px;
+    --_grid-cols: 4;
+
+    --_flex-group-gap: 10px;
+    --_grid-subheading-fs: 22px;
+}
+
+.seacargo__grid-subheading {
+    font-size: var(--_grid-subheading-fs);
+    font-weight: 600;
+    font-family: inherit;
+    margin-bottom: 5px;
+}
+
+.turnkey-delivery-section .car-banner__flex-group {
+    gap: var(--_flex-group-gap);
+}
+
+.turnkey-delivery-section .car-banner__subheading-wrapper {
+    align-items: flex-start;
+    width: var(--_heading-width);
+}
+
+.turnkey-delivery-section .car-banner__grid-group {
+    width: var(--_grid-group-width);
+    grid-template-columns: repeat(var(--_grid-cols), 1fr);
+}
+
+.turnkey-delivery-section .car-banner-bg {
+    top: var(--_img-offset-top);
+    left: var(--_img-offset-left);
+    width: var(--_img-width);
+    height: var(--_img-height);
+}
+
+.turnkey-delivery-section .car-banner__heading {
+    width: var(--_heading-width);
+}
+
+
 /* Carhauler Section */
 
 .hauler-banner .social-icons-flex-group {
@@ -1791,6 +1839,15 @@ header .arrow-li {
         --_flex-group-gap: 10px;
         --_grid-subheading-fs: 22px;
     }
+    .turnkey-delivery-section {
+        --_heading-width: 570px;
+        --_grid-group-width: 100%;
+        --_img-width: 493px;
+        --_img-height: 362px;
+        --_img-offset-left: 555px;
+        --_img-offset-top: -60px;
+        --_grid-cols: 4;
+    }
     .car-banner-section {
         --_banner-margin-top: 60px;
         --_grid-group-margin-block: 78px 100px;
@@ -1926,6 +1983,14 @@ header .arrow-li {
         --_img-offset-top: 125px;
         --_grid-cols: 2;
     }
+    .turnkey-delivery-section {
+        --_heading-width: 514px;
+        --_img-width: 506px;
+        --_img-height: 370px;
+        --_img-offset-left: 443px;
+        --_img-offset-top: -30px;
+        --_grid-cols: 4;
+    }
     .price-calc-section {
         --_title-fs: 28px;
         --_grid-group-fs: 24px;
@@ -1980,6 +2045,14 @@ header .arrow-li {
         --_img-height: calc(235px * 1.3);;
         --_img-offset-left: 25vw;
         --_img-offset-top: 0px;
+        --_grid-cols: 1;
+    }
+    .turnkey-delivery-section {
+        --_heading-width: 100%;
+        --_img-width: 446px;
+        --_img-height: 327px;
+        --_img-offset-left: 30vw;
+        --_img-offset-top: -40px;
         --_grid-cols: 1;
     }
     .car-banner-section {
@@ -2054,6 +2127,9 @@ header .arrow-li {
         --_margin-bottom: 150px;
         --_flex-gap: 15px;
     }
+    .turnkey-delivery-section {
+        --_img-offset-left: 15vw;
+    }
     .calc__step {
         padding: 0.8em 1.2em;
     }
@@ -2107,6 +2183,15 @@ header .arrow-li {
         --_img-height: 227px;
         --_img-offset-left: 20px;
         --_img-offset-top: 0px;
+    }
+    .turnkey-delivery-section {
+        --_img-width: 371px;
+        --_img-height: 271px;
+        --_img-offset-left: 20px;
+        --_img-offset-top: 0px;
+    }
+    .turnkey-delivery-section .car-banner-bg {
+        margin-bottom: 40px;
     }
     .price-calc-section {
         --_title-margin-block: 40px;
