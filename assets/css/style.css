@@ -1397,6 +1397,8 @@ header .arrow-li {
 
 .car-banner-bg {
     position: absolute;
+    object-fit: cover;
+    object-position: center;
 }
 
 .car-banner__heading {
@@ -1620,6 +1622,52 @@ header .arrow-li {
     width: var(--_heading-width);
 }
 
+/* Sea China Section */
+
+.sea-china-section {
+    --_heading-width: 881px;
+    --_grid-group-width: 100%;
+    --_img-width: 797px;
+    --_img-height: 446px;
+    --_img-offset-left: 808px;
+    --_img-offset-top: -131px;
+    --_grid-cols: 4;
+
+    --_flex-group-gap: 10px;
+    --_grid-subheading-fs: 22px;
+}
+
+.seacargo__grid-subheading {
+    font-size: var(--_grid-subheading-fs);
+    font-weight: 600;
+    font-family: inherit;
+    margin-bottom: 5px;
+}
+
+.sea-china-section .car-banner__flex-group {
+    gap: var(--_flex-group-gap);
+}
+
+.sea-china-section .car-banner__subheading-wrapper {
+    align-items: flex-start;
+    width: var(--_heading-width);
+}
+
+.sea-china-section .car-banner__grid-group {
+    width: var(--_grid-group-width);
+    grid-template-columns: repeat(var(--_grid-cols), 1fr);
+}
+
+.sea-china-section .car-banner-bg {
+    top: var(--_img-offset-top);
+    left: var(--_img-offset-left);
+    width: var(--_img-width);
+    height: var(--_img-height);
+}
+
+.sea-china-section .car-banner__heading {
+    width: var(--_heading-width);
+}
 
 /* Carhauler Section */
 
@@ -1856,6 +1904,14 @@ header .arrow-li {
         --_subtitle-width: 594px;
         --_grid-group-fs: 18px;
     }
+    .sea-china-section {
+        --_heading-width: 560px;
+        --_img-width: 588px;
+        --_img-height: 349px;
+        --_img-offset-left: 505px;
+        --_img-offset-top: -110px;
+        --_grid-cols: 2;
+    }
     .seacargo-section .car-banner__grid-group {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1991,6 +2047,14 @@ header .arrow-li {
         --_img-offset-top: -30px;
         --_grid-cols: 4;
     }
+    .sea-china-section {
+        --_heading-width: 514px;
+        --_img-width: 565px;
+        --_img-height: 333px;
+        --_img-offset-left: 379px;
+        --_img-offset-top: 40px;
+        --_grid-cols: 2;
+    }
     .price-calc-section {
         --_title-fs: 28px;
         --_grid-group-fs: 24px;
@@ -2055,6 +2119,14 @@ header .arrow-li {
         --_img-offset-top: -40px;
         --_grid-cols: 1;
     }
+    .sea-china-section {
+        --_heading-width: 100%;
+        --_img-width: calc(519px * 1.2);
+        --_img-height: calc(290px * 1.2);
+        --_img-offset-left: 15vw;
+        --_img-offset-top: -60px;
+        --_grid-cols: 1;
+    }
     .car-banner-section {
         --_banner-margin-top: 30px;
         --_grid-group-margin-block: 50px 0px;
@@ -2117,6 +2189,12 @@ header .arrow-li {
         --_img-offset-left: 20vw;
         --_img-offset-top: 0px;
         --_grid-cols: 1;
+    }
+    .sea-china-section {
+        --_img-width: 519px;
+        --_img-height: 290px;
+        --_img-offset-left: 5vw;
+        --_img-offset-top: -60px;
     }
     .calculator-section {
         --_tab-fs: 14px;
@@ -2192,6 +2270,12 @@ header .arrow-li {
     }
     .turnkey-delivery-section .car-banner-bg {
         margin-bottom: 40px;
+    }
+    .sea-china-section {
+        --_img-width: 457px;
+        --_img-height: 206px;
+        --_img-offset-left: 20px;
+        --_img-offset-top: -40px;
     }
     .price-calc-section {
         --_title-margin-block: 40px;
