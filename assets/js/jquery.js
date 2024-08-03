@@ -204,8 +204,8 @@
         initReviewsCarouselControls();
         if ($(".letters-carousel-track").length) {
             initLettersCarouselControls();
+            setupImageOverlay('.letters-carousel-slide');
         }
         initAccordion();
-        setupImageOverlay('.letters-carousel-slide');
     });
 })(jQuery);

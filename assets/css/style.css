@@ -2120,6 +2120,55 @@ header .arrow-li {
     margin-bottom: 150px;
 }
 
+/* Fulfillment Section */
+
+.fulfillment-section {
+    --_heading-width: 884px;
+    --_grid-group-width: 100%;
+    --_img-width: 539px;
+    --_img-height: 287px;
+    --_img-offset-left: 900px;
+    --_img-offset-top: -10px;
+    --_grid-cols: 4;
+    --_grid-group-fs: 16px;
+
+    --_flex-group-gap: 10px;
+    --_grid-subheading-fs: 20px;
+}
+
+.fulfillment-section .car-banner__grid-group {
+    width: var(--_grid-group-width);
+    grid-template-columns: 1.7fr 1fr 1fr 1fr;
+}
+
+.fulfillment-section .car-banner__flex-group {
+    gap: var(--_flex-group-gap);
+}
+
+.fulfillment-section .car-banner__subheading-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: var(--_heading-width);
+}
+
+
+.fulfillment-section .car-banner-bg {
+    top: var(--_img-offset-top);
+    left: var(--_img-offset-left);
+    width: var(--_img-width);
+    height: var(--_img-height);
+    object-position: center;
+}
+
+.fulfillment-section .car-banner__heading {
+    width: var(--_heading-width);
+}
+
+.fulfillment-section .seacargo__grid-subheading {
+    line-height: 115%;
+}
+
 /* Carhauler Section */
 
 .hauler-banner .social-icons-flex-group {
@@ -2402,6 +2451,19 @@ header .arrow-li {
         --_img-offset-top: -40px;
         --_grid-cols: 2;
     }
+    .fulfillment-section {
+        --_heading-width: 634px;
+        --_img-width: 395px;
+        --_img-height: 221px;
+        --_img-offset-left: 654px;
+        --_img-offset-top: 0px;
+        --_grid-cols: 2;
+    }
+    
+    .fulfillment-section .car-banner__grid-group {
+        grid-template-columns: 1.2fr 1fr;
+    }
+    
     
     .seacargo-section .car-banner__grid-group {
             grid-template-columns: repeat(2, 1fr);
@@ -2583,6 +2645,18 @@ header .arrow-li {
         --_img-offset-top: 36px;
         --_grid-cols: 2;
     }
+    .fulfillment-section {
+        --_heading-width: 593px;
+        --_img-width: 359px;
+        --_img-height: 214px;
+        --_img-offset-left: 551px;
+        --_img-offset-top: 232px;
+        --_grid-cols: 2;
+    }
+    
+    .fulfillment-section .car-banner__grid-group {
+        grid-template-columns: repeat(1fr, var(--_grid-cols));
+    }
     .price-calc-section {
         --_title-fs: 28px;
         --_grid-group-fs: 24px;
@@ -2690,6 +2764,14 @@ header .arrow-li {
         --_grid-cols: 1;
         --_grid-subheading-fs: 18px;
     }
+    .fulfillment-section {
+        --_heading-width: 100%;
+        --_img-width: 340px;
+        --_img-height: 194px;
+        --_img-offset-left: 45vw;
+        --_img-offset-top: 0;
+        --_grid-cols: 1;
+    }
     .car-banner-section {
         --_banner-margin-top: 30px;
         --_grid-group-margin-block: 50px 0px;
@@ -2705,6 +2787,9 @@ header .arrow-li {
         --_price-desc-my: 50px 150px;
     }
     .seacargo-section .car-banner-bg {
+        margin-block: 20px;
+    }
+    .fulfillment-section .car-banner-bg {
         margin-block: 20px;
     }
     .sea-rus-bel-section .car-banner-bg {
@@ -2810,6 +2895,12 @@ header .arrow-li {
         --_price-desc-fs: 20px;
         --_price-desc-my: 40px 130px;
     }
+    .fulfillment-section {
+        --_img-width: 340px;
+        --_img-height: 194px;
+        --_img-offset-left: 25vw;
+        --_img-offset-top: 0;
+    }
     .calc__step {
         padding: 0.8em 1.2em;
     }
@@ -2892,6 +2983,11 @@ header .arrow-li {
     .insurance-section {
         --_img-width: 245px;
         --_img-height: 244px;
+        --_img-offset-left: 60px;
+    }
+    .fulfillment-section {
+        --_img-width: 300px;
+        --_img-height: 175px;
         --_img-offset-left: 60px;
     }
     .price-calc-section {

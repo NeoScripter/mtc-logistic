@@ -131,7 +131,7 @@
             </ul>
         </div>
         <div class="slide-video">
-            <a href="https://youtu.be/RpSQ0jFtHIc?si=oY-UkioSQeiy-9B6" target="_blank"><img src="<?php echo get_template_directory_uri() . '/assets/images/video-review.png';?>" alt="Image 3"></a>
+            <a href="https://youtu.be/RpSQ0jFtHIc?si=oY-UkioSQeiy-9B6" target="_blank"><img src="<?php echo get_template_directory_uri() . '/assets/images/video-review.webp';?>" alt="Image 3"></a>
         </div>
     </div>
     <div class="carousel-controls-wrapper">
