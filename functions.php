@@ -79,3 +79,13 @@ function add_event_post_type() {
     register_post_type('FAQ', $args);
 }
 add_action('init', 'add_event_post_type');
+
+function get_permalink_by_title($page_title) {
+    $page = get_page_by_title($page_title);
+
+    if ($page) {
+        return get_permalink($page->ID);
+    }
+
+    return '';
+}

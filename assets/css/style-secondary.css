@@ -123,6 +123,55 @@
     font-size: var(--_grid-prg-fs);
 }
 
+/* Services Page */
+
+.services-page {
+    --_grid-cols: 3;
+    --_img-height: 120px;
+    --_img-left-offset: 220px;
+    --_img-bottom-offset: 50px;
+    --_btn-mt: 90px;
+    --_heading-fs: 24px;
+    --_prg-fs: 16px;
+    
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(var(--_grid-cols), 1fr);
+}
+
+.service-page_item {
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+
+    border-top: 1px solid var(--red);
+    background-color: #F8F8F8;
+    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.40);
+}
+
+.service-page_item h3 {
+    font-size: var(--_heading-fs);
+    line-height: 110%;
+    margin-bottom: 10px;
+}
+
+.service-page_item p {
+    font-size: var(--_prg-fs);
+}
+
+
+.service-page_item img {
+    position: absolute;
+    left: var(--_img-left-offset);
+    bottom: var(--_img-bottom-offset);
+    height: var(--_img-height);
+}
+
+.service-page_item a {
+    margin-top: var(--_btn-mt);
+    display: block;
+}
+
 @media screen and (max-width: 1110px) {
     .how-it-works-section {
         --_grid-col: 2;
