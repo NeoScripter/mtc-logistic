@@ -2069,38 +2069,38 @@ header .arrow-li {
 
 /* Insurance Section */
 
-.stamp-section {
-    --_heading-width: 815px;
+.insurance-section {
+    --_heading-width: 884px;
     --_grid-group-width: 100%;
-    --_img-width: 539px;
-    --_img-height: 287px;
-    --_img-offset-left: 815px;
-    --_img-offset-top: -15px;
+    --_img-width: 361px;
+    --_img-height: 358px;
+    --_img-offset-left: 955px;
+    --_img-offset-top: -48px;
     --_grid-cols: 4;
     --_grid-group-fs: 16px;
 
     --_flex-group-gap: 10px;
-    --_grid-subheading-fs: 22px;
+    --_grid-subheading-fs: 20px;
 }
 
-.stamp-section .car-banner__flex-group {
+.insurance-section .car-banner__flex-group {
     gap: var(--_flex-group-gap);
 }
 
-.stamp-section .car-banner__subheading-wrapper {
+.insurance-section .car-banner__subheading-wrapper {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     width: var(--_heading-width);
 }
 
-.stamp-section .car-banner__grid-group {
+.insurance-section .car-banner__grid-group {
     width: var(--_grid-group-width);
     -ms-grid-columns: (1fr)[var];
         grid-template-columns: repeat(var(--_grid-cols), 1fr);
 }
 
-.stamp-section .car-banner-bg {
+.insurance-section .car-banner-bg {
     top: var(--_img-offset-top);
     left: var(--_img-offset-left);
     width: var(--_img-width);
@@ -2108,16 +2108,16 @@ header .arrow-li {
     object-position: center;
 }
 
-.stamp-section .car-banner__heading {
+.insurance-section .car-banner__heading {
     width: var(--_heading-width);
 }
 
-.stamp-price-desc {
-    --_price-desc-fs: 24px;
-    --_price-desc-my: 50px 150px;
-    font-size: var(--_price-desc-fs);
-    font-weight: 600;
-    margin-block: var(--_price-desc-my);
+.insurance-section .seacargo__grid-subheading {
+    line-height: 115%;
+}
+
+.price-calc-section.mb {
+    margin-bottom: 150px;
 }
 
 /* Carhauler Section */
@@ -2394,6 +2394,14 @@ header .arrow-li {
         --_img-offset-top: -30px;
         --_grid-cols: 2;
     }
+    .insurance-section {
+        --_heading-width: 570px;
+        --_img-width: 316px;
+        --_img-height: 331px;
+        --_img-offset-left: 67vw;
+        --_img-offset-top: -40px;
+        --_grid-cols: 2;
+    }
     
     .seacargo-section .car-banner__grid-group {
             grid-template-columns: repeat(2, 1fr);
@@ -2567,6 +2575,14 @@ header .arrow-li {
         --_img-offset-top: 18px;
         --_grid-cols: 2;
     }
+    .insurance-section {
+        --_heading-width: 480px;
+        --_img-width: 303px;
+        --_img-height: 316px;
+        --_img-offset-left: 490px;
+        --_img-offset-top: 36px;
+        --_grid-cols: 2;
+    }
     .price-calc-section {
         --_title-fs: 28px;
         --_grid-group-fs: 24px;
@@ -2665,6 +2681,15 @@ header .arrow-li {
         --_img-offset-top: 0;
         --_grid-cols: 1;
     }
+    .insurance-section {
+        --_heading-width: 500px;
+        --_img-width: 277px;
+        --_img-height: 276px;
+        --_img-offset-left: 55vw;
+        --_img-offset-top: 0;
+        --_grid-cols: 1;
+        --_grid-subheading-fs: 18px;
+    }
     .car-banner-section {
         --_banner-margin-top: 30px;
         --_grid-group-margin-block: 50px 0px;
@@ -2687,6 +2712,13 @@ header .arrow-li {
     }
     .multiload-section .car-banner-bg {
         margin-block: 20px;
+    }
+    .insurance-section .car-banner-bg {
+        margin-block: 20px;
+    }
+    .price-calc-section {
+        --_title-fs: 20px;
+        --_grid-group-fs: 18px;
     }
 }
 
@@ -2755,6 +2787,12 @@ header .arrow-li {
         --_img-width: 162px;
         --_img-height: 194px;
         --_img-offset-left: 50vw;
+    }
+    .insurance-section {
+        --_heading-width: 100%;
+        --_img-width: 277px;
+        --_img-height: 276px;
+        --_img-offset-left: 38vw;
     }
     .calculator-section {
         --_tab-fs: 14px;
@@ -2850,6 +2888,11 @@ header .arrow-li {
         --_img-width: 147px;
         --_img-height: 175px;
         --_img-offset-left: 50%;
+    }
+    .insurance-section {
+        --_img-width: 245px;
+        --_img-height: 244px;
+        --_img-offset-left: 60px;
     }
     .price-calc-section {
         --_title-margin-block: 40px;

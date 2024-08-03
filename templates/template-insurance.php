@@ -33,7 +33,7 @@
     </div>
 </div>
 <main class="home-main centering">
-<section class="car-banner-section stamp-section">
+<section class="car-banner-section insurance-section">
         <div class="social-icons-flex-group">
             <a href="" class="social-icons-flex-subgroup">
                 <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/telegram.svg';?></div>
@@ -45,46 +45,50 @@
             </a>
         </div>
 
-        <h2 class="car-banner__heading">Таможенное оформление <span class="red-text">«за печатью»</span> клиента</h2>
+        <h2 class="car-banner__heading"><span class="red-text">Страхование</span> грузов</h2>
         <div class="car-banner__subheading-wrapper">
             <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/red-tick.svg"; ?>" alt="красная галочка">
-            <h3>Минимальные затраты и быстрое прохождение таможни. Мы поможем подготовить все документы и пройти таможенный контроль, заверяя их вашим именем</h3>
+            <h3>Безопасно доставить ваш груз с минимальными рисками. Мы предлагаем страхование товаров для защиты от различных рисков, обеспечивая надёжность и спокойствие нашим клиентам</h3>
         </div>
         <div class="car-banner__grid-group">
             <div class="car-banner__flex-group">
-                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/car-bnr-svg-3.svg"; ?>" alt="image1">
+                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg3.svg"; ?>" alt="image1">
                 <div>
-                    <h4 class="seacargo__grid-subheading">Экономия</h4>
-                    <p>Снижение затрат за счёт самостоятельного оформления документов</p>
+                    <h4 class="seacargo__grid-subheading">Широкий спектр покрываемых рисков</h4>
                 </div>
             </div>
             <div class="car-banner__flex-group">
-                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/haul-bnr-svg3.svg"; ?>" alt="image1">
+                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/location-red.svg"; ?>" alt="image1">
                 <div>
-                    <h4 class="seacargo__grid-subheading">Ответственность</h4>
-                    <p>Полная ответственность за оформление ложится на клиента</p>
+                    <h4 class="seacargo__grid-subheading">Индивидуальный подход</h4>
                 </div>
             </div>
             <div class="car-banner__flex-group">
                 <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-4.svg"; ?>" alt="image2">
                 <div>
-                    <h4 class="seacargo__grid-subheading">Прозрачность</h4>
-                    <p>Чёткое понимание процесса и отсутствие скрытых платежей</p>
+                    <h4 class="seacargo__grid-subheading">Прозрачность и доступность</h4>
                 </div>
             </div>
             <div class="car-banner__flex-group">
-                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/support.svg"; ?>" alt="image3">
+                <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/tracking.svg"; ?>" alt="image3">
                 <div>
-                    <h4 class="seacargo__grid-subheading">Поддержка</h4>
-                    <p>Консультации и помощь специалистов на каждом этапе</p>
+                    <h4 class="seacargo__grid-subheading">Реальное время отслеживания</h4>
                 </div>
             </div>
         </div>
-        <img src="<?php echo get_template_directory_uri() . "/assets/images/stamp-bg.webp"; ?>" alt="красный грузовик" class="car-banner-bg">
+        <img src="<?php echo get_template_directory_uri() . "/assets/images/insurance-bg.webp"; ?>" alt="красный грузовик" class="car-banner-bg">
     </section>
-    <section class="price-calc-section">
+    <section class="price-calc-section mb">
         <h2 class="heading-large">Расчёт <span class="red-text">стоимости</span></h2>
-        <p class="stamp-price-desc">Стоимость таможенного оформления зависит от количества кодов ТН ВЭД и объёма груза. Оплачиваются таможенные пошлины, НДС и акцизы. Для точного расчёта обратитесь к нашим специалистам или используйте калькулятор на сайте</p>
+        <div class="price-calc-title">
+            <h3 class="h3-price-title">Стоимость рассчитывается индивидуально, обеспечивая оптимальные условия для каждого клиента и зависит от:</h3>
+            <div class="price-calc__grid-group">
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-1.svg"; ?>" alt="Маршрут и расстояние">Стоимости страхуемого груза</div>
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/car-bnr-svg-4.svg"; ?>" alt="Тип автовоза">Перечня выбранных рисков</div>
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/car-bnr-svg-1.svg"; ?>" alt="Габариты и вес автомобиля">Периода действия страховки</div>
+                <div class="price-calc__flex-group"><img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/ch-svg-4.svg"; ?>" alt="Дополнительные услуги">Дополнительных расходов</div>
+            </div>
+        </div>
     </section>
     <?php get_template_part('includes/section','steps'); ?>
     <?php get_template_part('includes/section','accordion'); ?>
