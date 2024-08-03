@@ -2169,6 +2169,40 @@ header .arrow-li {
     line-height: 115%;
 }
 
+
+/* About Company Section */
+
+.about-company-section {
+    --_heading-width: 796px;
+    --_img-width: 703px;
+    --_img-height: 401px;
+    --_img-offset-left: 846px;
+    --_img-offset-top: -30px;
+
+    margin-bottom: 150px;
+}
+
+.about-company-section .car-banner__subheading-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: var(--_heading-width);
+}
+
+
+.about-company-section .car-banner-bg {
+    top: var(--_img-offset-top);
+    left: var(--_img-offset-left);
+    width: var(--_img-width);
+    height: var(--_img-height);
+    object-position: left;
+}
+
+.about-company-section .car-banner__heading {
+    width: var(--_heading-width);
+}
+
+
 /* Carhauler Section */
 
 .hauler-banner .social-icons-flex-group {
@@ -2458,6 +2492,15 @@ header .arrow-li {
         --_img-offset-left: 654px;
         --_img-offset-top: 0px;
         --_grid-cols: 2;
+    }
+    .about-company-section {
+        --_heading-width: 647px;
+        --_img-width: 491px;
+        --_img-height: 339px;
+        --_img-offset-left: 667px;
+        --_img-offset-top: -10px;
+    
+        margin-bottom: 100px;
     }
     
     .fulfillment-section .car-banner__grid-group {
@@ -2804,6 +2847,21 @@ header .arrow-li {
     .price-calc-section {
         --_title-fs: 20px;
         --_grid-group-fs: 18px;
+    }
+    .about-company-section {
+        --_heading-width: 100%;
+        --_img-width: calc(100% + 40px);
+        --_img-height: 250px;
+        --_img-offset-left: 0px;
+        --_img-offset-top: 0px;
+    
+        margin-bottom: 100px;
+    }
+    .about-company-section .car-banner-bg {
+        margin-inline: -20px;
+        margin-top: 50px;
+        max-width: calc(100% + 40px);
+        object-position: center;
     }
 }
 

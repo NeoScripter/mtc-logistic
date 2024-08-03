@@ -84,6 +84,45 @@
     border: 1px solid var(--red);
 }
 
+.car-banner-bg.small {
+    display: none;
+}
+
+/* Our Principles Section */
+
+.our-principles-section {
+    --_grid-my: 50px 80px;
+    --_grid-cols: 3;
+    --_grid-heading-fs: 24px;
+    --_grid-prg-fs: 16px;
+
+    padding-inline: 20px;
+}
+
+.our-principles__grid-group {
+    margin-block: var(--_grid-my);
+    display: grid;
+    grid-template-columns: repeat(var(--_grid-cols), 1fr);
+    gap: 20px;
+}
+
+.our-principles__grid-item {
+    padding: 20px;
+    border-top: 1px solid var(--red);
+    background-color: #F8F8F8;
+    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.40);
+}
+
+.our-principles__grid-item h3 {
+    font-size: var(--_grid-heading-fs);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.our-principles__grid-item p {
+    font-size: var(--_grid-prg-fs);
+}
+
 @media screen and (max-width: 1110px) {
     .how-it-works-section {
         --_grid-col: 2;
@@ -103,9 +142,17 @@
         --_grid-cols: 3;
         --_grid-fs: 18px;
     }
+    .our-principles-section {
+        --_grid-cols: 1;
+    }
 }
 @media screen and (max-width: 700px) {
-
+    .car-banner-bg.large {
+        display: none;
+    }
+    .car-banner-bg.small {
+        display: block;
+    }
 }
 @media screen and (max-width: 540px) {
     .how-it-works-section {
@@ -115,6 +162,10 @@
     }
     .extra-services {
         --_grid-cols: 1;
+    }
+    .our-principles-section {
+        --_grid-heading-fs: 18px;
+        --_grid-prg-fs: 14px;
     }
 }
 @media screen and (max-width: 360px) {

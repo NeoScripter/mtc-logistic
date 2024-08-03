@@ -1,5 +1,5 @@
 <?php
-if (is_page('Home')) {
+if (is_page('Home') || is_page('О компании')) {
     $section_heading = 'Коротко о нашей компании';
 } else {
     $section_heading = 'Почему мы?';
