@@ -1,0 +1,131 @@
+
+/* How it works Section */
+
+.how-it-works-section {
+    --_mb: 150px;
+    --_grid-col: 4;
+    --_heading-fs: 40px;
+    --_subheading-fs: 20px;
+    --_prg-fs: 16px;
+
+    margin-bottom: var(--_mb);
+    padding-inline: 20px;
+}
+
+.how-it-works-section .heading-large {
+    margin-bottom: 50px;
+}
+
+.fulfillment__grid-group {
+    display: grid;
+    grid-template-columns: repeat(var(--_grid-col), 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.fulfillment__grid-item {
+    padding-left: 20px;
+    border-left: 1px solid var(--red);
+}
+
+.fulfillment__heading {
+    font-size: var(--_heading-fs);
+    color: var(--red);
+    font-family: "Russo Regular";
+}
+
+.fulfillment__subheading {
+    font-size: var(--_subheading-fs);
+    margin-bottom: 5px;
+}
+
+.fulfillment__grid-group p {
+    font-size: var(--_prg-fs);
+}
+
+/* Extra Services Section */
+
+.extra-services {
+    --_grid-my: 50px;
+    --_grid-cols: 3;
+    --_grid-fs: 24px;
+    --_prg-fs: 20px;
+
+    padding-inline: 20px;
+    margin-bottom: 150px;
+}
+
+.extra-services .heading-large {
+    margin-bottom: 10px;
+}
+
+.extra-services__prg {
+    font-size: var(--_prg-fs);
+    font-weight: 600;
+}
+
+.extra-services__grid-group {
+    margin-block: var(--_grid-my);
+    display: grid;
+    grid-template-columns: repeat(var(--_grid-cols), 1fr);
+    gap: 20px;
+    font-size: var(--_grid-fs);
+    font-weight: 600;
+}
+
+.extra-services__grid-item {
+    padding: 20px;
+    border-top: 1px solid var(--red);
+    background-color: #F8F8F8;
+    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.40);
+}
+
+.extra-services .about-us-btn {
+    border: 1px solid var(--red);
+}
+
+@media screen and (max-width: 1110px) {
+    .how-it-works-section {
+        --_grid-col: 2;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+}
+@media screen and (max-width: 780px) {
+    .how-it-works-section {
+        --_heading-fs: 32px;
+        --_subheading-fs: 20px;
+    }
+    .extra-services {
+        --_prg-fs: 18px;
+        --_grid-cols: 3;
+        --_grid-fs: 18px;
+    }
+}
+@media screen and (max-width: 700px) {
+
+}
+@media screen and (max-width: 540px) {
+    .how-it-works-section {
+        --_grid-col: 1;
+        --_heading-fs: 28px;
+        --_prg-fs: 16px;
+    }
+    .extra-services {
+        --_grid-cols: 1;
+    }
+}
+@media screen and (max-width: 360px) {
+    .how-it-works-section .heading-large {
+        margin-bottom: 40px;
+    }
+    .how-it-works-section {
+        --_heading-fs: 26px;
+        --_mb: 130px;
+    }
+    .extra-services {
+        --_grid-my: 40px;
+    }
+}

@@ -7,6 +7,8 @@ function load_css() {
     wp_enqueue_style('reset');
     wp_register_style('style', get_template_directory_uri() . '/assets/css/style.css', [], false, 'all');
     wp_enqueue_style('style');
+    wp_register_style('style-secondary', get_template_directory_uri() . '/assets/css/style-secondary.css', [], false, 'all');
+    wp_enqueue_style('style-secondary');
 }
 add_action('wp_enqueue_scripts', 'load_css');
 
