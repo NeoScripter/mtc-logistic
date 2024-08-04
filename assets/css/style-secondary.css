@@ -1,4 +1,3 @@
-
 /* How it works Section */
 
 .how-it-works-section {
@@ -76,8 +75,8 @@
 .extra-services__grid-item {
     padding: 20px;
     border-top: 1px solid var(--red);
-    background-color: #F8F8F8;
-    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.40);
+    background-color: #f8f8f8;
+    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.4);
 }
 
 .extra-services .about-us-btn {
@@ -109,8 +108,8 @@
 .our-principles__grid-item {
     padding: 20px;
     border-top: 1px solid var(--red);
-    background-color: #F8F8F8;
-    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.40);
+    background-color: #f8f8f8;
+    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.4);
 }
 
 .our-principles__grid-item h3 {
@@ -127,26 +126,32 @@
 
 .services-page {
     --_grid-cols: 3;
-    --_img-height: 120px;
-    --_img-left-offset: 220px;
-    --_img-bottom-offset: 50px;
-    --_btn-mt: 90px;
+    --_img-height: 110px;
+    --_img-left-offset: 200px;
+    --_img-right-offset: auto;
+    --_img-bottom-offset: 65px;
+    --_grid-item-height: 256px;
     --_heading-fs: 24px;
     --_prg-fs: 16px;
-    
+
     gap: 20px;
     display: grid;
     grid-template-columns: repeat(var(--_grid-cols), 1fr);
+    margin-bottom: 150px;
+    padding-inline: 20px;
 }
 
 .service-page_item {
     position: relative;
     padding: 20px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: var(--_grid-item-height);
 
     border-top: 1px solid var(--red);
-    background-color: #F8F8F8;
-    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.40);
+    background-color: #f8f8f8;
+    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.4);
 }
 
 .service-page_item h3 {
@@ -159,27 +164,95 @@
     font-size: var(--_prg-fs);
 }
 
-
 .service-page_item img {
     position: absolute;
     left: var(--_img-left-offset);
     bottom: var(--_img-bottom-offset);
     height: var(--_img-height);
+    right: var(--_img-right-offset);
+}
+
+.service-page_item.larger img {
+    --_img-height: 150px;
+
+    left: auto;
+    height: var(--_img-height);
+    right: 20px;
+}
+
+.service-page_item.larger h3 {
+    max-width: 80%;
+}
+
+.service-page_item.turnkey {
+    grid-column: span 2;
+}
+
+.service-page_item.turnkey p {
+    max-width: 50%;
+    margin-bottom: 5px;
+}
+
+.service-page_item.turnkey a {
+    max-width: 50%;
+}
+
+.service-page_item.turnkey img {
+    width: 450px;
+    height: 354px;
+    left: auto;
+    right: 10px;
+    top: 10px;
 }
 
 .service-page_item a {
-    margin-top: var(--_btn-mt);
+    margin-top: auto;
     display: block;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 1110px) {
     .how-it-works-section {
         --_grid-col: 2;
     }
+    .services-page {
+        --_grid-cols: 2;
+        --_img-height: 130px;
+        --_img-left-offset: auto;
+        --_img-right-offset: 0;
+        --_img-bottom-offset: 10px;
+        --_grid-item-height: 222px;
+    }
+    .service-page_item.turnkey {
+        grid-column: span 1;
+    }
+    .service-page_item.turnkey img {
+        width: 287px;
+        height: 225px;
+        right: -100px;
+        top: auto;
+        bottom: -60px;
+    }
+    .service-page_item a {
+        width: 250px;
+    }
+    .service-page_item.turnkey p {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 900px) {
-
+    .services-page {
+        --_grid-cols: 2;
+        --_img-height: 110px;
+        --_img-left-offset: auto;
+        --_img-right-offset: 0;
+        --_img-bottom-offset: 10px;
+        --_grid-item-height: 222px;
+    }
 }
 @media screen and (max-width: 780px) {
     .how-it-works-section {
@@ -194,6 +267,33 @@
     .our-principles-section {
         --_grid-cols: 1;
     }
+    .services-page {
+        --_grid-cols: 2;
+        --_img-height: 110px;
+        --_img-left-offset: auto;
+        --_img-right-offset: 0;
+        --_img-bottom-offset: 65px;
+        --_grid-item-height: 260px;
+    }
+    .service-page_item.turnkey img {
+        width: 287px;
+        height: 225px;
+        right: -130px;
+        top: auto;
+        bottom: -40px;
+    }
+    .service-page_item a {
+        width: 100%;
+    }
+    .service-page_item.larger h3 {
+        max-width: 100%;
+    }
+    .service-page_item.turnkey p {
+        max-width: 100%;
+    }
+    .service-page_item.turnkey a {
+        max-width: 100%;
+    }
 }
 @media screen and (max-width: 700px) {
     .car-banner-bg.large {
@@ -201,6 +301,29 @@
     }
     .car-banner-bg.small {
         display: block;
+    }
+    .services-page {
+        --_grid-cols: 2;
+        --_img-height: 90px;
+        --_img-left-offset: auto;
+        --_img-right-offset: 0;
+        --_img-bottom-offset: 65px;
+        --_grid-item-height: 230px;
+        --_heading-fs: 20px;
+        --_prg-fs: 14px;
+    }
+    .service-page_item.larger img {
+        --_img-height: 110px;
+        left: auto;
+        height: var(--_img-height);
+        right: 20px;
+    }
+    .service-page_item.turnkey img {
+        width: 225px;
+        height: 177px;
+        right: -100px;
+        top: auto;
+        bottom: -20px;
     }
 }
 @media screen and (max-width: 540px) {
@@ -216,6 +339,32 @@
         --_grid-heading-fs: 18px;
         --_grid-prg-fs: 14px;
     }
+    .services-page {
+        --_grid-cols: 1;
+        --_img-height: 100px;
+        --_img-left-offset: auto;
+        --_img-right-offset: 0;
+        --_img-bottom-offset: 65px;
+        --_grid-item-height: 230px;
+        --_heading-fs: 20px;
+        --_prg-fs: 14px;
+    }
+    .service-page_item.larger img {
+        --_img-height: 140px;
+        left: auto;
+        height: var(--_img-height);
+        right: 20px;
+    }
+    .service-page_item.larger h3 {
+        max-width: 360px;
+    }
+    .service-page_item.turnkey img {
+        width: 225px;
+        height: 177px;
+        right: -60px;
+        top: auto;
+        bottom: -20px;
+    }
 }
 @media screen and (max-width: 360px) {
     .how-it-works-section .heading-large {
@@ -227,5 +376,21 @@
     }
     .extra-services {
         --_grid-my: 40px;
+    }
+    .service-page_item.larger img {
+        --_img-height: 110px;
+        left: auto;
+        height: var(--_img-height);
+        right: 20px;
+    }
+    .service-page_item.turnkey img {
+        width: 180px;
+        height: 147px;
+        right: -60px;
+        top: auto;
+        bottom: 0px;
+    }
+    .service-page_item a {
+        font-size: 16px;
     }
 }
