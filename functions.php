@@ -48,11 +48,6 @@ function register_menus() {
 }
 add_action('init', 'register_menus');
 
-/* function allow_html_in_menu_items($title, $item, $args, $depth) {
-    return $item->post_title;
-}
-add_filter('nav_menu_item_title', 'allow_html_in_menu_items', 10, 4);
- */
 // Adding svgs
 function cc_mime_types($mimes) {
     $mimes['svg'] = 'image/svg+xml';
@@ -60,7 +55,6 @@ function cc_mime_types($mimes) {
   }
   add_filter('upload_mimes', 'cc_mime_types');
 
-add_filter('the_content', 'add_custom_classes_to_paragraphs');
 
 function add_event_post_type() {
     $args = [

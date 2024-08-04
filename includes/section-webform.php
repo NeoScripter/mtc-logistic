@@ -1,4 +1,4 @@
-<section class="webform-section">
+<section class="webform-section" id="webform">
     <h2>Оставьте заявку на бесплатную консультацию</h2>
     <p class="form-subheading">мы свяжемся с вами в ближайшее время</p>
         <form class="contact-webform" action="">

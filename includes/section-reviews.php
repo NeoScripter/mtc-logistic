@@ -1,4 +1,4 @@
-<section class="reviews-section">
+<section class="reviews-section" id="reviews">
     <h2 class="heading-large">Люди нам <span class="red-text">доверяют</span></h2>
     <div class="carousel">
         <div class="carousel-track-container">

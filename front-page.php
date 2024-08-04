@@ -113,7 +113,7 @@
     <?php get_template_part('includes/section','steps'); ?>
     <?php get_template_part('includes/section','reviews'); ?>
     <?php get_template_part('includes/section','about'); ?>
-    <section class="letters-section">
+    <section class="letters-section" id="letters">
     <h2 class="heading-large"><span class="red-text">Благодарственные</span> письма</h2>
         <div class="letters-carousel">
             <div class="letters-carousel-track-container">
