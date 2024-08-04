@@ -3165,7 +3165,11 @@ header .arrow-li {
         --_svg-mb: 10px;
         --_cols: 4;
         --_gaps: 3;
-    }   
+    } 
+    .about-us-section.whyus {
+        --_cols: 4;
+        --_gaps: 3;
+    }  
     .about-us-section:before {
         -webkit-clip-path: polygon(71% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
                 clip-path: polygon(71% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -3349,6 +3353,10 @@ header .arrow-li {
         --_cols: 3;
         --_gaps: 2;
     }   
+    .about-us-section.whyus {
+        --_cols: 2;
+        --_gaps: 1;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -3585,4 +3593,8 @@ header .arrow-li {
         --_cols: 2;
         --_gaps: 1;
     }    
+    .about-us-section.whyus {
+        --_cols: 2;
+        --_gaps: 1;
+    }
 }

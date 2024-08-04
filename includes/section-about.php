@@ -50,5 +50,5 @@ if (is_page('Home') || is_page('О компании')) {
             <p>Возможность отсрочки платежа для вашего удобства</p>
         </div>
     </div>
-    <a href="" class="about-us-btn animated-btn-1">Больше о компании</a>
+    <a href="<?php echo get_permalink_by_title("О компании"); ?>" class="about-us-btn animated-btn-1">Больше о компании</a>
 </section>

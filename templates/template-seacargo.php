@@ -117,7 +117,7 @@
     </section>
     <?php get_template_part('includes/section','steps'); ?>
     <?php get_template_part('includes/section','accordion'); ?>
-    <?php get_template_part('includes/section','about'); ?>
+    <?php get_template_part('includes/section','whyus'); ?>
     <?php get_template_part('includes/section','reviews'); ?>
     <?php get_template_part('includes/section','webform'); ?>
 </main>

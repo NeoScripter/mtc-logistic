@@ -248,6 +248,59 @@
     top: 0;
 }
 
+/* Contacts Page */
+
+.contacts-page {
+    --_py: 50px 150px;
+    --_map-width: 796px;
+    --_map-height: 388px;
+    --_map-offset-left: 410px;
+    --_desc-width: 490px;
+
+    padding-block: var(--_py);
+    position: relative;
+    padding-inline: 20px;
+}
+
+.contacts-desc {
+    position: relative;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    max-width: var(--_desc-width);
+    z-index: 2;
+
+    padding: 20px;
+    background-color: #F8F8F8;
+    box-shadow: 0px 1px 20px 0px rgba(137, 141, 159, 0.40);
+}
+
+.contacts-subheading {
+    color: #B2B2B2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.google-map-frame {
+    position: absolute;
+    width: var(--_map-width);
+    height: var(--_map-height);
+    top: 0;
+    left: var(--_map-offset-left);
+    z-index: -1;
+}
+
+.contacts-desc p:nth-of-type(2) {
+    margin-bottom: 40px;
+}
+
+.contacts-desc p {
+    margin-bottom: 5px;
+}
+
+
 @media screen and (max-width: 1110px) {
     .how-it-works-section {
         --_grid-col: 2;
@@ -282,6 +335,13 @@
         --_img-width: 491px;
         --_img-height: 339px;
         --_mb: 150px;
+    }
+    .contacts-page {
+        --_py: 50px 150px;
+        --_map-width: 80%;
+        --_map-height: 388px;
+        --_map-offset-left: 18%;
+        --_desc-width: 450px;
     }
 }
 
@@ -341,6 +401,21 @@
     }
     .corporate-bg-img {
         display: none;
+    }
+    .contacts-page {
+        --_py: 30px 100px;
+        --_desc-width: 100%;
+    }
+    .contacts-desc {
+        margin-bottom: 20px;
+    }
+    .google-map-frame {
+        position: static;
+        width: 100%;
+        height: 300px;
+    }
+    .contacts-desc p:nth-of-type(2) {
+        margin-bottom: 30px;
     }
 }
 @media screen and (max-width: 700px) {
@@ -415,6 +490,17 @@
     }
     .corporate-page { 
         font-size: 18px;
+    }
+    .contacts-desc {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .contacts-desc p:nth-of-type(2) {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .contacts-subheading {
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 360px) {
