@@ -139,6 +139,6 @@
             <button class="carousel-btn carousel-btn-left"><?php include get_template_directory() . '/assets/images/svgs/carousel-arrow-left.svg';?></button>
             <button class="carousel-btn carousel-btn-right"><?php include get_template_directory() . '/assets/images/svgs/carousel-arrow-right.svg';?></button>
         </div>
-        <a href="" class="carousel-link animated-btn-2">Больше отзывов на Авито</a>
+        <a href="https://www.avito.ru/user/e09c4edcabab4c3650927b267d528fec/profile?src=sharing" target="_blank" class="carousel-link animated-btn-2">Больше отзывов на Авито</a>
     </div>
 </section>

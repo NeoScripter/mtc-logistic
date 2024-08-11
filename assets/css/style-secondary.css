@@ -359,6 +359,24 @@
     height: min-content;
 }
 
+.privacy-policy-page li {
+    list-style: disc !important;
+    margin-left: 1em;
+    margin-bottom: 5px;
+}
+
+.archive a {
+    color: rgb(66, 105, 231);
+}
+
+.policy-notice a {
+    transition: color 0.3s ease;
+}
+
+.policy-notice a:is(:hover, :focus, :active) {
+    color: #505050;
+  }
+
 @media screen and (max-width: 1110px) {
     .how-it-works-section {
         --_grid-col: 2;

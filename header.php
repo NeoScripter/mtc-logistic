@@ -30,7 +30,7 @@
             ?>
         <div class="header-main__btn-group">
             <button class="header-btn animated-btn-3">Рассчитать стоимость</button>
-            <a href="#webform" class="header-btn animated-btn-2">Бесплатный звонок</a>
+            <a href="<?php echo get_permalink_by_title("Home") . '#webform'; ?>" class="header-btn animated-btn-2">Бесплатный звонок</a>
         </div>
         <div class="header-small-menu-group">
             <div class="header-main__btn-group-small">

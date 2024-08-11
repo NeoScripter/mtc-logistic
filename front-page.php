@@ -49,15 +49,13 @@
                     </div>
                 </div>
                 <div class="home-banner__bottom">
-                    <form class="consultation-form" action="">
+                    <div class="consultation-form">
                         <h3 class="form-title">Мы решим любую задачу, пока вы заняты своими делами</h3>
                         <div class="input-wrapper">
-                            <input type="text" placeholder="Имя">
-                            <input type="text" placeholder="Телефон">
-                            <button type="submit" class="animated-btn-2">Заказать консультацию</button>
+                            <?php echo do_shortcode('[contact-form-7 id="494756b" title="Contact form 1"]'); ?>
                         </div>
-                        <p class="policy-notice">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных</p>
-                    </form>
+                        <p class="policy-notice">Нажимая на кнопку, вы соглашаетесь с <a href="<?php echo get_permalink_by_title("Privacy Policy"); ?>">политикой обработки данных</a></p>
+                    </div>
                     <div class="social-icons-flex-group">
                         <a href="https://t.me/MTClogistic" class="social-icons-flex-subgroup">
                             <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/telegram.svg';?></div>
