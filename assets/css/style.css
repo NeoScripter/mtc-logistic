@@ -1569,7 +1569,7 @@ header .arrow-li {
     display: block;
 }
 
-.contact-webform {
+.contact-webform p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1580,16 +1580,39 @@ header .arrow-li {
     padding-block: 10px;
 }
 
-.contact-webform input {
+.wpcf7-not-valid-tip {
+    max-width: 100% !important;
+    margin-top: 5px;
+}
+
+.contact-webform .wpcf7-spinner {
+    max-width: 6px;
+    height: 6px;
+    align-self: center;
+}
+
+
+.contact-webform br {
+    display: none;
+}
+
+.contact-webform span {
+    display: block;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+}
+
+.contact-webform input:not(input[type="submit"]) {
     font-size: var(--_form-fs);
     padding: 1em 0.8em;
     background-color: transparent;
     border: 1px solid #B2B2B2;
     color: #fff;
+    width: 100% !important;
 }
+
+
 
 .contact-webform input:is(:hover, :focus, :active) {
     border-radius: 0px;
@@ -1611,17 +1634,25 @@ header .arrow-li {
     color: #B2B2B2;
 }
 
-.submit-btn {
+.contact-webform input[type="submit"] {
     padding: 1em 0.8em;
+    display: block;
     cursor: pointer;
     width: var(--_btn-width);
     -ms-flex-negative: 0;
         flex-shrink: 0;
     font-size: var(--_btn-fs);
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.submit-btn:is(:hover, :focus-visible, :active) {
+
+.contact-webform input[type="submit"]:is(:hover, :focus, :active) {
     border-color: #fff;
+    background-color: transparent;
 }
 
 /* Accordion Section */
@@ -2642,7 +2673,7 @@ header .arrow-li {
         --_flex-gap: 20px;
         --_btn-width: 100%;
     }
-    .contact-webform {
+    .contact-webform p {
         margin-top: 10px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
