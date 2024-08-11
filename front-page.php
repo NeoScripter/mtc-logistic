@@ -20,7 +20,7 @@
             ?>
         <div class="popup-btn-group">
             <button class="popup-btn animated-btn-3">Рассчитать стоимость</button>
-            <button class="popup-btn animated-btn-2">Бесплатный звонок</button>
+            <a href="#webform" class="popup-btn animated-btn-2">Бесплатный звонок</a>
         </div>
     </div>
 </div>
@@ -59,11 +59,11 @@
                         <p class="policy-notice">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных</p>
                     </form>
                     <div class="social-icons-flex-group">
-                        <a href="" class="social-icons-flex-subgroup">
+                        <a href="https://t.me/MTClogistic" class="social-icons-flex-subgroup">
                             <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/telegram.svg';?></div>
                             <div class="banner-bottom__text-wrapper">Telegram</div>
                         </a>
-                        <a href="" class="social-icons-flex-subgroup">
+                        <a href="https://wa.me/74991135559" class="social-icons-flex-subgroup">
                             <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/whatsapp.svg';?></div>
                             <div class="banner-bottom__text-wrapper">WhatsApp</div>
                         </a>

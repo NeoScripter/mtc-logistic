@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Carhauler
  */
@@ -9,21 +10,21 @@
     <div class="popup-menu">
         <div class="popup-menu__logo-wrapper">
             <a href="<?php echo home_url(); ?>" class="homepage-link"><img src="<?php echo get_template_directory_uri() .
-            "/assets/images/logo-black.png"; ?>" alt="logo" class="popup-logo"></a>
+                                                                                    "/assets/images/logo-black.png"; ?>" alt="logo" class="popup-logo"></a>
             <img src="<?php echo get_template_directory_uri() .
-                "/assets/images/svgs/close.svg"; ?>" alt="burger-menu" class="close-burger-menu">
+                            "/assets/images/svgs/close.svg"; ?>" alt="burger-menu" class="close-burger-menu">
         </div>
         <?php
-            wp_nav_menu(
-                array(
-                    'theme_location' => 'top-menu',
-                    'container'      => 'nav',
-                    'container_class' => 'nav-popup',
-                    'menu_class'     => 'nav-popup__ul',
-                    'fallback_cb'    => false,
-                )
-            );
-            ?>
+        wp_nav_menu(
+            array(
+                'theme_location' => 'top-menu',
+                'container'      => 'nav',
+                'container_class' => 'nav-popup',
+                'menu_class'     => 'nav-popup__ul',
+                'fallback_cb'    => false,
+            )
+        );
+        ?>
         <div class="popup-btn-group">
             <button class="popup-btn animated-btn-3">Рассчитать стоимость</button>
             <button class="popup-btn animated-btn-2">Бесплатный звонок</button>
@@ -32,16 +33,7 @@
 </div>
 <main class="home-main centering">
     <section class="hauler-banner car-banner-section">
-        <div class="social-icons-flex-group">
-            <a href="" class="social-icons-flex-subgroup">
-                <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/telegram.svg';?></div>
-                <div class="banner-bottom__text-wrapper">Telegram</div>
-            </a>
-            <a href="" class="social-icons-flex-subgroup">
-                <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/whatsapp.svg';?></div>
-                <div class="banner-bottom__text-wrapper">WhatsApp</div>
-            </a>
-        </div>
+        <?php get_template_part('includes/section', 'social.links'); ?>
 
         <h2 class="hauler-banner__heading car-banner__heading"><span class="red-text">Автовоз</span> для доставки автомобилей по России и из Китая</h2>
         <div class="hauler__subheading-wrapper car-banner__subheading-wrapper">
@@ -99,16 +91,17 @@
             </div>
         </div>
     </section>
-    <?php get_template_part('includes/section','steps'); ?>
-    <?php get_template_part('includes/section','accordion'); ?>
-    <?php get_template_part('includes/section','whyus'); ?>
-    <?php get_template_part('includes/section','reviews'); ?>
-    <?php get_template_part('includes/section','webform'); ?>
+    <?php get_template_part('includes/section', 'steps'); ?>
+    <?php get_template_part('includes/section', 'accordion'); ?>
+    <?php get_template_part('includes/section', 'whyus'); ?>
+    <?php get_template_part('includes/section', 'reviews'); ?>
+    <?php get_template_part('includes/section', 'webform'); ?>
 </main>
 <style>
     .accordion-section {
         margin-bottom: 50px;
     }
+
     @media screen and (max-width: 900px) {
         .accordion-section {
             margin-bottom: 100px;

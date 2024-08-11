@@ -35,13 +35,13 @@
                     <a href="tel:+74991135559" class="footer__tel">+7 499 113-55-59</a>
                     <a href="mailto:info@mtc-logistic.com">info@mtc-logistic.com</a>
                     <div class="footer__social-links">
-                        <a href="" class="footer__social-link">
+                        <a href="https://t.me/MTClogistic" target="_blank" class="footer__social-link">
                             <img class="footer__social-link-img" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/telegram.svg';?>" alt="MTC Logistic логотип">
                         </a>
-                        <a href="" class="footer__social-link">
+                        <a href="https://wa.me/74991135559" target="_blank" class="footer__social-link">
                             <img class="footer__social-link-img" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/whatsapp.svg';?>" alt="MTC Logistic логотип">
                         </a>
-                        <a href="" class="footer__social-link">
+                        <a href="https://vk.com/mtc_logistic" target="_blank" class="footer__social-link">
                             <img class="" src="<?php echo get_template_directory_uri() . '/assets/images/svgs/vk.svg';?>" alt="MTC Logistic логотип">
                         </a>
                     </div>
@@ -53,7 +53,7 @@
     <div class="footer-bottom">
         <p>© MTC Logistic, 2010–2024</p>
         <div class="logo-footer-wrapper"><img class="logo-footer" src="<?php echo get_template_directory_uri() . '/assets/images/logo-white.png';?>" alt="MTC Logistic логотип"></div>
-        <a class="footer__privacy-policy">Политика конфиденциальности</a>
+        <a href="<?php echo get_permalink_by_title("Privacy Policy"); ?>" class="footer__privacy-policy">Политика конфиденциальности</a>
     </div>
 </footer>
 <style>

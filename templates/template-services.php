@@ -58,13 +58,13 @@
         </div>
         <div class="service-page_item">
             <h3><span class="red-text">Морские</span> контейнерные перевозки из Китая</h3>
-            <p></p>
+            <p>22-30 дней</p>
             <img src="<?php echo get_template_directory_uri() . "/assets/service-img/service-5.webp"; ?>" alt="Красный грузовик">
             <a class="animated-btn-3" href="<?php echo get_permalink_by_title("Морские контейнерные перевозки из Китая"); ?>">Подробнее</a>
         </div>
         <div class="service-page_item">
             <h3>Доставка <span class="red-text">сборных грузов</span> из Китая</h3>
-            <p></p>
+            <p>от 12 до 32 дней</p>
             <img src="<?php echo get_template_directory_uri() . "/assets/service-img/service-6.webp"; ?>" alt="Красный грузовик">
             <a class="animated-btn-3" href="<?php echo get_permalink_by_title("Доставка сборных грузов из Китая"); ?>">Подробнее</a>
         </div>

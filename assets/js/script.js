@@ -7,6 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const headerBtnGroup = document.querySelector(".header-main__btn-group");
         const primaryLogo = document.querySelector(".header-main-logo");
 
+        function closeMenu() {
+            requestAnimationFrame(() => {
+                popupMenu.style.transform = "translateX(100%)";
+                headerBtnGroup.style.opacity = "1";
+                primaryLogo.style.opacity = "1";
+                setTimeout(() => {
+                    popupMenuOverlay.style.transform = "translateX(100%)";
+                }, 1000);
+            });
+        }
+
         burgerMenuBtn.addEventListener("click", () => {
             requestAnimationFrame(() => {
                 headerBtnGroup.style.opacity = "0";
@@ -16,16 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-        closeBurgerMenuBtn.addEventListener("click", () => {
-            requestAnimationFrame(() => {
-                popupMenu.style.transform = "translateX(100%)";
-                headerBtnGroup.style.opacity = "1";
-                primaryLogo.style.opacity = "1";
-                setTimeout(() => {
-                    popupMenuOverlay.style.transform = "translateX(100%)";
-                }, 1000);
-            });
+        popupMenu.querySelectorAll("a").forEach((link) => {
+            link.addEventListener('click', () => {
+                closeMenu();
+            })
+        })
 
+        closeBurgerMenuBtn.addEventListener("click", () => {
+            closeMenu();
         });
     }
     initBurgerMenu();

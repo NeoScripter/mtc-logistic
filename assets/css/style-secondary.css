@@ -300,6 +300,29 @@
     margin-bottom: 5px;
 }
 
+/* Privacy Policy */
+
+.privacy-policy {
+    padding-inline: 20px;
+    margin-bottom: 50px;
+}
+
+.privacy-policy h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-block: 30px;
+    font-family: "Source SemiBold";
+}
+
+.privacy-policy h2 {
+    font-size: 20px;
+    margin-block: 10px 20px;
+    font-family: "Source SemiBold";
+}
+
+.privacy-policy p {
+    font-size: 16px;
+}
 
 @media screen and (max-width: 1110px) {
     .how-it-works-section {
@@ -500,6 +523,23 @@
         font-weight: 600;
     }
     .contacts-subheading {
+        font-size: 14px;
+    }
+    
+    .privacy-policy {
+        margin-bottom: 30px;
+    }
+
+    .privacy-policy h1 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .privacy-policy h2 {
+        font-size: 18px;
+    }
+
+    .privacy-policy p {
         font-size: 14px;
     }
 }

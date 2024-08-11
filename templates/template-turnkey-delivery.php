@@ -32,16 +32,7 @@
 </div>
 <main class="home-main centering">
     <section class="car-banner-section turnkey-delivery-section">
-        <div class="social-icons-flex-group">
-            <a href="" class="social-icons-flex-subgroup">
-                <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/telegram.svg';?></div>
-                <div class="banner-bottom__text-wrapper">Telegram</div>
-            </a>
-            <a href="" class="social-icons-flex-subgroup">
-                <div class="banner-bottom__svg-wrapper"><?php include get_template_directory() . '/assets/images/svgs/whatsapp.svg';?></div>
-                <div class="banner-bottom__text-wrapper">WhatsApp</div>
-            </a>
-        </div>
+        <?php get_template_part('includes/section', 'social.links'); ?>
 
         <h2 class="car-banner__heading">⁠Доставка из Китая <span class="red-text">«под ключ»</span></h2>
         <div class="car-banner__subheading-wrapper">
