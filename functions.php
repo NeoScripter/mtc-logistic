@@ -18,6 +18,8 @@ function load_js() {
     wp_enqueue_script('script.js');
     wp_register_script('jquery.js', get_template_directory_uri() . '/assets/js/jquery.js', array('jquery'), false, true);
     wp_enqueue_script('jquery.js');
+    wp_register_script('table1.js', get_template_directory_uri() . '/assets/js/table1.js', array('jquery'), false, true);
+    wp_enqueue_script('table1.js');
 }
 add_action('wp_enqueue_scripts', 'load_js');
 

@@ -86,25 +86,44 @@
         </div>
     </section>
     <section class="calculator-section">
-        <div class="calc__tab-wrapper">
-            <div class="calc__step calc__current-step">1 шаг</div>
-            <div class="calc__step">2 шаг</div>
-            <div class="calc__step">3 шаг</div>
-            <div class="calc__step">4 шаг</div>
-        </div>
         <div class="quiz-wrapper">
-            <h3 class="quiz-heading">Выберите тип, марку и модель вашего транспортного средства</h3>
+            <h3 class="quiz-heading">Укажите необходимые данные</h3>
             <div class="quiz__input-wrapper">
-                <input type="text" placeholder="Тип транспорта">
                 <div class="quiz__example-wrapper">
-                    <input type="text" placeholder="Марка транспорта">
-                    <div class="quiz__input-example">например : Volkswagen</div>
+                    <select id="departure-city" class="quiz-dropdown">
+                        <option value="saint-petersburg" disabled selected>Город отправки</option>
+                    </select>
                 </div>
                 <div class="quiz__example-wrapper">
-                    <input type="text" placeholder="Модель транспорта">
-                    <div class="quiz__input-example">например : Polo</div>
+                    <select id="arrival-city" class="quiz-dropdown">
+                        <option value="saint-petersburg" disabled selected>Город прибытия</option>
+                    </select>
                 </div>
-                <button class="quiz__continue-btn animated-btn-2">Продолжить</button>
+                <div class="quiz__example-wrapper mobile-result">
+                    <div class="calc-result">Расчет в ₽</div>
+                </div>
+                <button class="quiz__continue-btn animated-btn-3" id="calculate-btn">Рассчитать стоимость</button>
+            </div>
+            <div class="quiz__input-wrapper">
+                <div class="quiz__example-wrapper">
+                    <div class="desktop-result calc-result">Расчет в ₽</div>
+                    <div class="quiz__input-example">Ставка действительна при сдаче порожнего контейнера в том же городе, где выгрузили груз. Для расчета точной ставки под ваш запрос свяжитесь с нашим менеджером</div>
+                    <div class="quiz__input-example">Если вы не нашли нужного вам города, свяжитесь с нами, мы разработаем для вас индивидуальный маршрут</div>
+                </div>
+                <a href="#webform" class="quiz__continue-btn animated-btn-2" id="show-result-btn">Заказать точный расчет</a>
+            </div>
+            <div class="quiz__input-wrapper">
+                <div class="quiz__example-wrapper">
+                    <div class="table">
+                        <p class="table-title">Развернуть таблицу ставок </p>
+                        <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/arrow-down-red.svg"; ?>" alt="Красная стрелка вниз">
+                        <div class="table-content">
+                            <div>Город отправления</div>
+                            <div>Город прибытия</div>
+                            <div>Стоимость</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -125,5 +144,6 @@
         }
     }
 </style>
+
 
 <?php get_footer(); ?>
