@@ -91,21 +91,21 @@
             <h3 class="quiz-heading">Укажите необходимые данные</h3>
             <div class="quiz__input-wrapper">
                 <div class="quiz__example-wrapper">
-                    <select id="cargo-volume" class="quiz-dropdown">
-                        <option value="saint-petersburg" disabled selected>Объем груза в м3</option>
-                    </select>
+                    <input type="number" id="cargo-volume" class="quiz-dropdown" placeholder="Объем груза в м3">
+                    <div class="quiz__input-example error"></div>
                 </div>
                 <div class="quiz__example-wrapper">
-                    <input type="number" id="cargo-weight" class="quiz-dropdown" placeholder="Объем груза в кг">
+                    <input type="number" id="cargo-weight" class="quiz-dropdown" placeholder="Вес груза в кг">
+                    <div class="quiz__input-example error"></div>
                 </div>
                 <div class="quiz__example-wrapper mobile-result">
                     <div class="calc-result">Расчет в $</div>
                 </div>
-                <button class="quiz__continue-btn animated-btn-3" id="calculate-btn">Рассчитать стоимость</button>
+                <button class="quiz__continue-btn animated-btn-3 disabled" id="calculate-btn">Рассчитать стоимость</button>
             </div>
             <div class="quiz__input-wrapper">
                 <div class="quiz__example-wrapper">
-                    <div class="desktop-result calc-result">Расчет в ₽</div>
+                    <div class="desktop-result calc-result">Расчет в $</div>
                     <div class="quiz__input-example">В итоговую стоимость включены: приём груза в г.Иу, пересчёт мест и фотофиксация на складе в Иу; доставка из Иу до Москвы, погрузка в вашу машину на складе в Москве</div>
                     <div class="quiz__input-example">НЕ ВКЛЮЧЕНЫ: таможенные платежи</div>
                     <div class="quiz__input-example">Для получения расчёта по лучшим условиям на рынке, напишите или позвоните нашим менеджерам</div>

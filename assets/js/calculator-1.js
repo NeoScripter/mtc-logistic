@@ -65,8 +65,8 @@
             const selectedArrivalCity = parent.find("#arrival-city").val();
             const selectedDepartureCity = parent.find("#departure-city").val();
         
-            const arrivalCityErrorField = parent.find("#arrival-city").siblings(".quiz__input-example.error");
-            const departureCityErrorField = parent.find("#departure-city").siblings(".quiz__input-example.error");
+            const arrivalCityErrorField = selectedArrivalCity.siblings(".quiz__input-example.error");
+            const departureCityErrorField = selectedDepartureCity.siblings(".quiz__input-example.error");
         
             arrivalCityErrorField.text("");
             departureCityErrorField.text("");
