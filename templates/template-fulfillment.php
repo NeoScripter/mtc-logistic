@@ -98,7 +98,7 @@
                 <p>Вы указываете в личном кабинете, на какой маркетплейс доставить товар, а мы берём на себя всю рутинную работу</p>
             </div>
         </div>
-        <p>*Услуга предоставляется совместно с нашим партнёром, являющимся одной из самых крупных компаний, оказывающих услуги фулфилмента. Более подробную информацию можно получить на их <a href="" class="red-text">сайте</a>, по телефону: <a href="tel:+74952150430" class="red-text">+7 495 215-04-30</a> или по электронной почте: <a class="red-text" href="mailto:info@teamdeem.ru">info@teamdeem.ru</a></p>
+        <p>*Услуга предоставляется совместно с нашим партнёром, являющимся одной из самых крупных компаний, оказывающих услуги фулфилмента. Более подробную информацию можно получить на их <a href="https://teamdeem.ru/" target="_blank" class="red-text">сайте</a>, по телефону: <a href="tel:+74952150430" class="red-text">+7 495 215-04-30</a> или по электронной почте: <a class="red-text" href="mailto:info@teamdeem.ru">info@teamdeem.ru</a></p>
     </section>
     <section class="extra-services">
         <h2 class="heading-large"><span class="red-text">Дополнительные услуги</span> для вашего успеха</h2>
@@ -108,7 +108,7 @@
             <div class="extra-services__grid-item">Создание продающих фотографий товаров</div>
             <div class="extra-services__grid-item">Подготовка продающих описаний товаров</div>
         </div>
-        <a href="" class="about-us-btn animated-btn-2">Больше о компании</a>
+        <a href="<?php echo get_permalink_by_title('О компании'); ?>" class="about-us-btn animated-btn-2">Больше о компании</a>
     </section>
     <?php get_template_part('includes/section', 'steps'); ?>
     <?php get_template_part('includes/section', 'accordion'); ?>

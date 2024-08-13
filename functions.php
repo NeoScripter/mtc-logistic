@@ -18,10 +18,22 @@ function load_js() {
     wp_enqueue_script('script.js');
     wp_register_script('jquery.js', get_template_directory_uri() . '/assets/js/jquery.js', array('jquery'), false, true);
     wp_enqueue_script('jquery.js');
-    wp_register_script('table1.js', get_template_directory_uri() . '/assets/js/table1.js', array('jquery'), false, true);
-    wp_enqueue_script('table1.js');
 }
 add_action('wp_enqueue_scripts', 'load_js');
+
+function conditionally_load_calculator_script() {
+    wp_register_script('calculator-1', get_template_directory_uri() . '/assets/js/calculator-1.js', array('jquery'), false, true);
+    wp_register_script('calculator-2', get_template_directory_uri() . '/assets/js/calculator-2.js', array('jquery'), false, true);
+
+    if (is_page("sea_rus_belarus")) {
+        wp_enqueue_script('calculator-1');
+    } elseif (is_page("multimodal")) {
+        wp_enqueue_script('calculator-2');
+    }
+}
+
+add_action('wp_enqueue_scripts', 'conditionally_load_calculator_script');
+
 
 function enqueue_custom_scripts() {
     wp_enqueue_script('jquery');

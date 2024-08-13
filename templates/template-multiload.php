@@ -33,7 +33,7 @@
         </div>
     </div>
 </div>
-<main class="home-main centering">
+<main class="home-main centering multiload-wrapper">
     <section class="car-banner-section multiload-section">
         <?php get_template_part('includes/section', 'social.links'); ?>
 
@@ -87,25 +87,43 @@
         </div>
     </section>
     <section class="calculator-section">
-        <div class="calc__tab-wrapper">
-            <div class="calc__step calc__current-step">1 шаг</div>
-            <div class="calc__step">2 шаг</div>
-            <div class="calc__step">3 шаг</div>
-            <div class="calc__step">4 шаг</div>
-        </div>
         <div class="quiz-wrapper">
-            <h3 class="quiz-heading">Выберите тип, марку и модель вашего транспортного средства</h3>
+            <h3 class="quiz-heading">Укажите необходимые данные</h3>
             <div class="quiz__input-wrapper">
-                <input type="text" placeholder="Тип транспорта">
                 <div class="quiz__example-wrapper">
-                    <input type="text" placeholder="Марка транспорта">
-                    <div class="quiz__input-example">например : Volkswagen</div>
+                    <select id="cargo-volume" class="quiz-dropdown">
+                        <option value="saint-petersburg" disabled selected>Объем груза в м3</option>
+                    </select>
                 </div>
                 <div class="quiz__example-wrapper">
-                    <input type="text" placeholder="Модель транспорта">
-                    <div class="quiz__input-example">например : Polo</div>
+                    <input type="number" id="cargo-weight" class="quiz-dropdown" placeholder="Объем груза в кг">
                 </div>
-                <button class="quiz__continue-btn animated-btn-2">Продолжить</button>
+                <div class="quiz__example-wrapper mobile-result">
+                    <div class="calc-result">Расчет в $</div>
+                </div>
+                <button class="quiz__continue-btn animated-btn-3" id="calculate-btn">Рассчитать стоимость</button>
+            </div>
+            <div class="quiz__input-wrapper">
+                <div class="quiz__example-wrapper">
+                    <div class="desktop-result calc-result">Расчет в ₽</div>
+                    <div class="quiz__input-example">В итоговую стоимость включены: приём груза в г.Иу, пересчёт мест и фотофиксация на складе в Иу; доставка из Иу до Москвы, погрузка в вашу машину на складе в Москве</div>
+                    <div class="quiz__input-example">НЕ ВКЛЮЧЕНЫ: таможенные платежи</div>
+                    <div class="quiz__input-example">Для получения расчёта по лучшим условиям на рынке, напишите или позвоните нашим менеджерам</div>
+                </div>
+                <a href="#webform" class="quiz__continue-btn animated-btn-2" id="show-result-btn">Заказать точный расчет</a>
+            </div>
+            <div class="quiz__input-wrapper">
+                <div class="quiz__example-wrapper">
+                    <div class="table">
+                        <p class="table-title">Развернуть таблицу ставок</p>
+                        <img src="<?php echo get_template_directory_uri() . "/assets/images/svgs/arrow-down-red.svg"; ?>" alt="Красная стрелка вниз">
+                        <div class="table-content">
+                            <div>Вес</div>
+                            <div class="density">Плотность</div>
+                            <div>Цена / кг</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

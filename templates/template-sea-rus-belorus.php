@@ -32,7 +32,7 @@
         </div>
     </div>
 </div>
-<main class="home-main centering">
+<main class="home-main centering sea-rus-bel-wrapper">
     <section class="car-banner-section sea-rus-bel-section">
         <?php get_template_part('includes/section', 'social.links'); ?>
 
@@ -91,13 +91,15 @@
             <div class="quiz__input-wrapper">
                 <div class="quiz__example-wrapper">
                     <select id="departure-city" class="quiz-dropdown">
-                        <option value="saint-petersburg" disabled selected>Город отправки</option>
+                        <option value="none" disabled selected>Город отправки</option>
                     </select>
+                    <div class="quiz__input-example error"></div>
                 </div>
                 <div class="quiz__example-wrapper">
                     <select id="arrival-city" class="quiz-dropdown">
-                        <option value="saint-petersburg" disabled selected>Город прибытия</option>
+                        <option value="none" disabled selected>Город прибытия</option>
                     </select>
+                    <div class="quiz__input-example error"></div>
                 </div>
                 <div class="quiz__example-wrapper mobile-result">
                     <div class="calc-result">Расчет в ₽</div>

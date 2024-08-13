@@ -2502,6 +2502,19 @@ header .arrow-li {
     transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
+.multiload-wrapper .table-content {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.density {
+    grid-column: span 2;
+}
+
+.quiz__input-example.error {
+    color: red;
+    font-size: 1rem;
+}
+
 .table-content.open {
     height: auto;
     opacity: 1;
@@ -2509,6 +2522,15 @@ header .arrow-li {
 
 #table-1-title {
     z-index: 301;
+}
+
+.table-title {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.table-title.fade-out {
+    opacity: 0;
 }
 
 .table-content > div {
