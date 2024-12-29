@@ -6,7 +6,7 @@ This repository contains the source code for a multipage website developed for a
 
 ## Screenshot
 
-![Website Screenshot](./public/images/homepage.webp)
+![Website Screenshot](homepage.webp)
 
 *The home page.*
 
