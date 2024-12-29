@@ -28,7 +28,7 @@
     <section class="home-banner">
             <div class="home-banner__content">
                 <div class="home-banner__top">
-                    <h1 class="home-banner__heading">Перевозка грузов<br><span class="red-text">по России, Белоруси и из Китая</span></h1>
+                    <h1 class="home-banner__heading"><?php echo get_field('title') ;?></h1>
                     <div class="home-banner__flex-group">
                         <div class="home-banner__flex-subgroup">
                             <img src="<?php echo get_template_directory_uri() . '/assets/images/svgs/red-tick.svg';?>" alt="Красная галочка в красном кружке">
@@ -79,32 +79,32 @@
                 <h3><span class="red-text">Автоперевозка</span> морских контейнеров по России и Белоруси</h3>
                 <p>От 3 часов</p>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-1.webp';?>" alt="Красная фура с контейнером" class="serv-img">
-                <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
+                <a href="<?php echo get_permalink_by_title("Автоперевозка морских контейнеров по России и Белоруси"); ?>" class="serv__find-more-btn animated-btn-3">Подробнее</a>
             </div>
             <div class="serv__card">
                 <h3><span class="red-text">ЖД доставка</span> морских контейнеров по России и из Китая</h3>
                 <p>4–17 дней</p>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-2.webp';?>" alt="Красная фура с контейнером" class="serv-img">
-                <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
+                <a href="<?php echo get_permalink_by_title("ЖД доставка морских контейнеров из Китая"); ?>" class="serv__find-more-btn animated-btn-3">Подробнее</a>
             </div>
             <div class="serv__card">
                 <h3><span class="red-text">Автовоз</span> для доставки автомобилей по России и из Китая</h3>
                 <p>1–12 дней</p>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-3.webp';?>" alt="Красная фура с контейнером" class="serv-img">
-                <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
+                <a href="<?php echo get_permalink_by_title("Автовоз для доставки автомобилей по России и из Китая"); ?>" class="serv__find-more-btn animated-btn-3">Подробнее</a>
             </div>
             <div class="serv__card">
                 <h3>⁠Перевозка <span class="red-text">негабаритных</span> грузов</h3>
                 <p>1–12 дней</p>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-4.webp';?>" alt="Красная фура с контейнером" class="serv-img">
-                <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
+                <a href="<?php echo get_permalink_by_title("⁠Перевозка негабаритных грузов"); ?>" class="serv__find-more-btn animated-btn-3">Подробнее</a>
             </div>
             <div class="serv__card last-card">
                 <h3>Доставка из Китая <span class="red-text">«под ключ»</span></h3>
                 <p>От завода в Китае до вашего порога, быстро и без хлопот. Мы сделаем все, пока вы занимаетесь своим бизнесом</p>
                 <p>До 25 дней</p>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/serv-img-5.webp';?>" alt="Красная фура с контейнером" class="serv-img">
-                <button class="serv__find-more-btn animated-btn-3">Подробнее</button>
+                <a href="<?php echo get_permalink_by_title("Доставка из Китая «под ключ»"); ?>" class="serv__find-more-btn animated-btn-3">Подробнее</a>
             </div>
         </div>
     </section>

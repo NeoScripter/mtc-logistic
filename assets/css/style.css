@@ -973,6 +973,12 @@ header .arrow-li {
     width: min(868px, 100%);
 }
 
+
+.serv__find-more-btn {
+    text-align: center;
+}
+
+
 .serv__card h3 {
     font-size: var(--_heading-fs);
     font-family: "Source Regular";
@@ -2506,6 +2512,10 @@ header .arrow-li {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.seacargo-wrapper  .table-content {
+    grid-template-columns: repeat(6, 1fr);
+}
+
 .density {
     grid-column: span 2;
 }
@@ -2799,10 +2809,19 @@ input[type="number"] {
     .quiz__example-wrapper {
         width: 100%;
     }
+    .desktop-result {
+        display: none;
+    }
+    .mobile-result {
+        display: block;
+    }
     
 }
 
 @media screen and (max-width: 780px) {
+    .seacargo-wrapper .table-content {
+        --children-fs: 12px;
+    }
     .webform-section {
         --_heading-fs: 28px;
         --_subheading-fs: 20px;
@@ -2925,15 +2944,12 @@ input[type="number"] {
     #show-result-btn {
         order: -1;
     }
-    .desktop-result {
-        display: none;
-    }
-    .mobile-result {
-        display: block;
-    }
 }
 
 @media screen and (max-width: 700px) {
+    .seacargo-wrapper .table-content {
+        --children-fs: 10px;
+    }
     .car-banner-bg {
         position: relative;
         -o-object-fit: cover;
@@ -3195,9 +3211,16 @@ input[type="number"] {
     .table-content {
         --children-fs: 10px;
     }
+
+    .seacargo-wrapper .table-content {
+        --children-fs: 8px;
+    }
 }
 
 @media screen and (max-width: 360px) {
+    .seacargo-wrapper .table-content {
+        --children-fs: 6px;
+    }
     .webform-section {
         --_heading-fs: 20px;
         --_subheading-fs: 14px;

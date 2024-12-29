@@ -109,7 +109,7 @@
             const finalPrice = calculatedPricePerKilo * Math.floor(weight);
         
             parent.find(".calc-result").each(function () {
-                $(this).text(finalPrice);
+                $(this).text("$ " + finalPrice);
             });
         });
 
@@ -117,7 +117,7 @@
             let resultingKey;
             for (key of map.keys()) {
                 resultingKey = key;
-                if (density > key) {
+                if (density >= key) {
                     break;
                 }
             }
